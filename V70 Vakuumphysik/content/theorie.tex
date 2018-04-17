@@ -1,0 +1,49 @@
+\section{Einleitung}
+
+\section{Theorie}
+\subsection{Vakuum}
+Hingegen der allgemeinen Auffassung, dass Vakuum ein Volumen gänzlich ohne Materie beschreibt, wird in der Physik und Technik
+der Vakuumbegriff in Bereiche eingeteilt.
+Abhängig vom Druck, der mittleren freien Weglänge und des Strömungsverhaltens lassen sich, wie Tabelle $\ref{tab:bereiche}$ zeigt, vier Bereiche unterscheiden.
+
+\begin{table}[!hht]
+\begin{tabular}{c c c c}
+ Bereich & Druck $\:/\: mbar$ & freie Weglänge [m] & Strömungsmechanismus \\
+ \midrule
+ Grobvakuum & 1000 - 1 & $10^{-7}$ - $10^{-4}$ & viskos \\
+ Feinvakuum & 1 - $10^{-5}$ & $10^{-4}$ - $10^{-1}$ & Knudsen \\
+ Hochvakuum & $10^{-3}$ - $10^{-7}$ & $10^{-1}$ - $10^3$ & molekular \\
+ Ultrahochvakuum & $< 10^{-7}$ & $> 10^3$ & molekular \\
+\end{tabular}
+\caption{Bereichseinteilung des Vakuums}
+\label{tab:bereiche}
+\end{table}
+
+Die mittlere freie Weglänge beschreibt die durchschnittliche Wegstrecke, die ein Teilchen zurücklegt, ohne mit anderen Teilchen in Wechselwirkung zu treten.
+Eben für Gase und der Annahme, dass eine Maxwellsche Geschwindigkeitsverteilung vorliegt gilt die Gasgleichung
+\begin{equation}
+  \lambda = \frac{k_B T}{\sqrt{2}\pi d^2p}.
+\end{equation}
+Hierbei ist $k_B$ die Boltzmann-Konstante, $T$ die Temperatur, $d$ der Durchmesser des Moleküls und $p$ der Druck.
+\subsection{Strömungsarten}
+Für die Charakterisierung einer vorliegenden Strömung und für die Wahl der richtigen Pumpe wird die Knudsen-Zahl $K_n$ als einheitenlose Größe verstanden.
+Sie ist definiert durch den Quotienten der mittleren freien Weglänge $\lambda$ und der charakteristischen Länge der Strömung $l_c$
+\begin{equation}
+  K_n=\frac{\lambda}{l_c}.
+\end{equation}
+Bei einer Knudsen-Zahl $K_N < 0,01$ wird von einer Kontinuumsströmung und Grobvakuum gesprochen. Hierbei kommt es vermehrt zum Zusammenstoßen der Teilchen im Gas
+untereinander. Die mittlere freie Weglänge ist kleiner als die Abmessung der Strömungskanals.
+Es wird außerdem in laminarer und turbolenter Strömung unterschieden.
+Die laminare Strömung beschreibt Strömungen in Schichten. Die Gasteilchen bleiben immer parallel zueinander.
+Nimmt die Strömungsgeschwindigkeit aber zu, so lösen sich die Schichten auf und die Strömung wird turbolent.
+Beschrieben wird der Grenzübergang durch die Reynoldszahl
+\begin{equation}
+  R=\frac{\rho v l_c}{\eta}.
+\end{equation}
+$\rho$ ist die Dichte, $v$ ist die Strömungsgeschwindigkeit und $eta$ die dynamische Viskosität.
+Turbolente Strömungen kommen zum Beispiel beim Abpumpen von Atmosphärendruck.
+In der Pumptechnik wird versucht, diese Strömungsart zu verhindern, da durch auftretende Strömungswiderstände Pumpen mit erhöhter Saugkraft benötigt werden.\newline
+Für $ 0,01 \leq K_n \geq 0,5$ wird der Begriff der Knudsen-Strömung gebraucht.
+Charakteristisch ist diese für den Feinvakuumbereich, der in technischen Anwendungen häufig eine Rolle spielt.\newline
+Liegt die Knudsen-Zahl oberhalb von 0,5 so lassen sich kaum noch Wechselwirkungen der Gasteilchen untereinander feststellen.
+Es kommt zur molekularen Strömung, bei der die mittlere freie Weglänge sehr viel größer als die Abmessung des Strömungskanals ist.
