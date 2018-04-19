@@ -1,1 +1,39 @@
 \section{Auswertung}
+\subsection{Bestimmung des Volumens}
+Für die folgende Auswertung ist es unumgänglich, das Volumen des Messaufbaus zu bestimmen.
+Tabelle $\ref{tab:Bauteile}$ zeigt, aufgelistet nach Pumpen- und Messart die verwendeten Bauteile und ihre Volumina.
+Es wird zwischen der Evakuierungsmessung mit der Turbopumpe TE, derselben Messart mit der Drehschieberpumpe DE und der Leckratenmessung
+mit der Drehschieberpumpe DL und mit der Turbopumpe TL unterschieden.\newline
+Ein Verbindungsstück zur Drehschieberpumpe wurde händisch vermessen.
+Das Stück wurde als Zylinder angenähert, sodass sich sein Volumen nach
+\begin{align}
+  V_{\text{Zy}}=\pi l r^2 &, \qquad \sigma=\sqrt{4 \pi^{2} l^{2} r^{2} \sigma_{r}^{2}  + \pi^{2} r^{4} \sigma_{l}^{2} }\\
+\label{eq:VolumenZylinder}
+\end{align}
+ergibt.\newline
+Mit $l=\SI{61 \pm 1}{mm}$ und $r=\SI{6,00 \pm 0,025}{mm}$ wird $V_\text{Zy}=(6{,}9 \pm 0{,}1)\cdot10^{-3}\,l$.
+\begin{table}[!hht]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		Bauteil Nr. & Bauteilbezeichnung & {$\symup{Volumen} \:/\: l$}& TE & TL & DE & DL\\ \hline
+		1	&	Tank & $9,5 \pm 0,8$ & 1 & 1 & 1 & 1 \\ \hline
+		2	&	langer Schlauch & $0,8 \pm 0,1$ &  &  & 1 & 1 \\	\hline
+		3	&	kurzer Schlauch & $0,087 \pm 0,011$ &  &  & 1 & 1 \\	\hline
+		4a	&	T-Stück, klein & $0,013 \pm 0,002$ &  &  & 1 & 1 \\	\hline
+		4b	&	T-Stück, groß & $0,25 \pm 0,01$ & 1 & 1 & 1 & 1 \\	\hline
+		5a	&	Kreuzstück, klein & $0,016 \pm 0,002$ &  &  & 1 & 1 \\	\hline
+		5b	&	Kreuzstück, groß & $0,177 \pm 0,09$ & 1 & 1 & 1 & 1 \\	\hline
+		6a	&	Handventil 1, offen & $0,015 \pm 0,002$ &  & 1 & 1 & 2 \\	\hline
+		6b	&	Handventil 1, geschlossen & $0,005 \pm 0,001$ &  2 & 1 & 2 & 1 \\	\hline
+		7a	&	Handventil 2, offen & $0,025 \pm 0,005$ &  &  & 1 &  \\	\hline
+		7b	&	Handventil 2, geschlossen & $0,0125 \pm 0,0025$ &  &  &  & 1 \\	\hline
+		8a	&	Klappenventil, offen & $0,044 \pm 0,004$ & 1 &  &  &  \\	\hline
+		8b	&	Klappenventil, geschlossen & $0,022 \pm 0,002$ &  & 1 & 1 & 1 \\	\hline
+		9	&	Querschnittsverengung & $0,067 \pm 0,004$ & 1 &  &  &  \\	\hline
+		10	&	Verbindungsstück & $4,72 \pm 0,06$ &  &  & 1 & 1 \\	\hline
+	\end{tabular}
+	\caption{Auflistung der Bauteile.\cite{anleitung}}
+	\label{tab:Bauteile}
+\end{table}
+Die Teilvolumina der jeweiligen Aufbauten werden addiert und im Folgenden angegeben. Die Fehlerberechnung erfolgt mit Formel ALLGEMEIN!!!.
