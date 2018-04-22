@@ -1,10 +1,21 @@
 \section{Auswertung}
+Die Auswertung, genauer die Fehlerrechnung, die Plots und Ausgleichsrechnung erfolgt mit den Paketen
+Numpy \cite{numpy}, Uncertainties \cite{uncertainties}, Matplotlib \cite{matplotlib} und Scipy \cite{scipy} in der Programmiersprache python.
 \subsection{Fehlerrechnung}
 Zu Beginn der Auswertung sei gesagt, dass eine Ungenauigkeit von $\SI{30}{\percent}$ des analogen zum digitalen Glühkathodenvakuummessgeräts
 bei der Messung festgestellt wurde und im Folgenden berücksichtigt wurde.
 Auch muss erwähnt werden, dass die Zeitmessung mit einer Handystoppuhr erfolgte und eine durch menschliche Reaktion verursachte
 Verzögerung von $\SI{180}{ms}$ beachtet wird.\cite{reaktion}
-In den nachfolgenden Messwerttabellen sind die Abweichungen schon miteingerechnet.
+In den nachfolgenden Messwerttabellen sind die Abweichungen schon miteingerechnet.\\
+Die Mittelwerte werden nach
+\begin{equation}
+	\bar{x}=\frac{1}{N}\sum_{i}^N x_i
+\end{equation}
+und deren Standardabweichung mit
+\begin{equation}
+	\sigma_{\bar{x}} = \sqrt{\frac{1}{N(N-1)} \sum_{i}^N (x_i-\bar{x})^2}
+\end{equation}
+berechnet.
 \subsection{Bestimmung des Volumens}
 Für die folgende Auswertung ist es unumgänglich, das Volumen des Messaufbaus zu bestimmen.
 Tabelle $\ref{tab:Bauteile}$ zeigt, aufgelistet nach Pumpen- und Messart die verwendeten Bauteile und ihre Volumina.
@@ -80,19 +91,19 @@ Drehschieber Pfeiffer Duo 004A mit einem Saugvermögen von $\SI{1,1}{l/s}$
 {$p \:/\: \si{mbar}$} & {$\ln{\Bigl( \frac{p(t)-p_E}{p_0-p_E}\Bigr)}$} & {$t_1 \:/\: \si{s} $} & {$t_2 \:/\: \si{s}$} & {$t_3 \:/\: \si{s}$} & {$t_4 \:/\: \si{s}$} & {$t_5 \:/\: \si{s}$} & {$\bar{t} \:/\: \si{s}$}\\
 \midrule
 $(1000 \pm \, 300)$ & 1 & 0 &  0 & 0 & 0 & 0 & 0\\
-$(100 \pm \, 30)$ &  & 18,62 & 11,59 & 16,47 & 15,02 & 16,43 & $15,63 \pm \, 1,04$\\
-$(40 \pm \, 12)$ &  & 35,33 & 26,49 & 32,97 & 34,34 & 33,50 & $32,53 \pm \, 1,40$\\
-$(10 \pm \, 3)$ &  & 49,85 & 42,19 & 49,28 & 48,84 & 49,01 & $47,83 \pm \, 1,27$\\
-$(6 \pm \, 1,8)$ &  & 54,99 & 46,42 & 54,25 & 54,31 & 54,18 & $52,83 \pm \, 1,44$\\
-$(4 \pm \, 1,2)$ &  & 59,42 & 50,29 & 57,74 & 57,65 & 58,36 & $56,69 \pm \, 1,46$\\
-$(2 \pm \, 0,6)$ &  & 65,83 & 57,38 & 64,60 & 64,50 & 64,79 & $63,42 \pm \, 1,37$\\
-$(1 \pm \, 0,3)$ &  & 73,00 & 64,02 & 71,62 & 69,82 & 71,97 & $70,09 \pm \, 1,43$\\
-$(0,6 \pm \, 0,18)$ &  & 79,54 & 70,73 & 77,92 & 77,80 & 78,18 & $76,8 \pm \, 1,4$\\
-$(0,4 \pm \, 0,12)$ &  & 86,35 & 77,33 & 85,30 & 85,24 & 85,19 & $83,9 \pm \, 1,5$\\
-$(0,2 \pm \, 0,06)$ &  & 99,69 & 90,02 & 98,98 & 98,17 & 98,83 & $97,14 \pm \, 1,61$\\
-$(0,1 \pm \, 0,03)$ &  & 111,79 & 101,65 & 110,30 & 111,17 & 111,87 & $109,36 \pm \, 1,74$\\
-$(0,06 \pm \, 0,02)$ &  & 125,13 & 113,88 & 128,72 & 129,62 & 130,60 & $125,59 \pm \, 2,75$\\
-$(0,04 \pm \, 0,1)$ &  & 152,59 & 144,82 & 162,48 & 164,23 & 164,97 & $157,8 \pm \, 3,5$
+$(100 \pm \, 30)$ & -(2,3 \pm \, 0,4) & 18,62 & 11,59 & 16,47 & 15,02 & 16,43 & $15,63 \pm \, 1,04$\\
+$(40 \pm \, 12)$ & -(3,2 \pm \, 0,4) & 35,33 & 26,49 & 32,97 & 34,34 & 33,50 & $32,53 \pm \, 1,40$\\
+$(10 \pm \, 3)$ & -(4,6 \pm \, 0,4) & 49,85 & 42,19 & 49,28 & 48,84 & 49,01 & $47,83 \pm \, 1,27$\\
+$(6 \pm \, 1,8)$ & -(5,1 \pm \, 0,4) & 54,99 & 46,42 & 54,25 & 54,31 & 54,18 & $52,83 \pm \, 1,44$\\
+$(4 \pm \, 1,2)$ & -(5,5 \pm \, 0,4) & 59,42 & 50,29 & 57,74 & 57,65 & 58,36 & $56,69 \pm \, 1,46$\\
+$(2 \pm \, 0,6)$ & -(6,2 \pm \, 0,4) & 65,83 & 57,38 & 64,60 & 64,50 & 64,79 & $63,42 \pm \, 1,37$\\
+$(1 \pm \, 0,3)$ & -(6,9 \pm \, 0,4) & 73,00 & 64,02 & 71,62 & 69,82 & 71,97 & $70,09 \pm \, 1,43$\\
+$(0,6 \pm \, 0,18)$ & -(7,5 \pm \, 0,4) & 79,54 & 70,73 & 77,92 & 77,80 & 78,18 & $76,8 \pm \, 1,4$\\
+$(0,4 \pm \, 0,12)$ & -(7,9 \pm \, 0,4) & 86,35 & 77,33 & 85,30 & 85,24 & 85,19 & $83,9 \pm \, 1,5$\\
+$(0,2 \pm \, 0,06)$ & -(8,7 \pm \, 0,5) & 99,69 & 90,02 & 98,98 & 98,17 & 98,83 & $97,14 \pm \, 1,61$\\
+$(0,1 \pm \, 0,03)$ & -(9,7 \pm \, 0,6) & 111,79 & 101,65 & 110,30 & 111,17 & 111,87 & $109,36 \pm \, 1,74$\\
+$(0,06 \pm \, 0,02)$ & -(10,8 \pm \, 1,2) & 125,13 & 113,88 & 128,72 & 129,62 & 130,60 & $125,59 \pm \, 2,75$\\
+$(0,04 \pm \, 0,01)$ & - & - & - & - & - & - & -
 \end{tabular}
 \caption{Messwerte für die Evakuierungskurve der Drehschieberpumpe.}
 \end{table}
