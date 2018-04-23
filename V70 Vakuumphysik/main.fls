@@ -377,6 +377,8 @@ INPUT C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-regular.
 INPUT C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-bold.luc
 INPUT ./content/theorie.tex
 INPUT ./content/theorie.tex
+INPUT ./Bilder/drehschieber.png
+INPUT Bilder/drehschieber.png
 INPUT ./content/durchfuehrung.tex
 INPUT ./content/durchfuehrung.tex
 INPUT ./Bilder/Versuch2.jpg
@@ -386,6 +388,16 @@ INPUT Bilder/schemaVersuch.png
 INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
 INPUT C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc
+INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
+INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
+INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
+INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
 INPUT C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc

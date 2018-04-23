@@ -162,6 +162,29 @@
       \verb http://www.numpy.org/
       \endverb
     \endentry
+    \entry{schemadreh}{online}{}
+      \name{author}{1}{}{%
+        {{hash=033dc1c07167c022dbca038e4dbbe025}{%
+           family={Pfeiffer-Vacuum},
+           familyi={P\bibinithyphendelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{033dc1c07167c022dbca038e4dbbe025}
+      \strng{fullhash}{033dc1c07167c022dbca038e4dbbe025}
+      \strng{authornamehash}{033dc1c07167c022dbca038e4dbbe025}
+      \strng{authorfullhash}{033dc1c07167c022dbca038e4dbbe025}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Drehschiebervakuumpumpen}
+      \field{urlday}{23}
+      \field{urlmonth}{4}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb https://www.pfeiffer-vacuum.com/de/know-how/vakuumerzeugung/drehschiebervakuumpumpen/
+      \endverb
+    \endentry
     \entry{reaktion}{online}{}
       \name{author}{1}{}{%
         {{hash=2d44349af1a57cb92ea97ac880ad86a7}{%

@@ -1,0 +1,478 @@
+This is LuaTeX, Version 0.95.0 (TeX Live 2016/W32TeX)  (format=lualatex 2017.4.10)  23 APR 2018 14:55
+ restricted system commands enabled.
+ file:line:error style messages enabled.
+**theorie.tex
+(./theorie.tex
+LaTeX2e <2017/01/01> patch level 3
+Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
+Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended collection.(using cache: C:/texlive/2016/texmf-var/luatex-cache/generic)
+luaotfload | conf : Root cache directory is C:/texlive/2016/texmf-var/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse-resolved path “c:/texlive/2016/texmf-dist/tex/luatex/luaotfload/fontloader-2017-02-11.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.027”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is C:/texlive/2016/texmf-var/luatex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
+luaotfload | main : initialization completed in 0.172 seconds
+Babel <3.9r> and hyphenation patterns for 1 language(s) loaded.
+./theorie.tex:1: Undefined control sequence.
+l.1 \section
+          {Einleitung}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./theorie.tex:1: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \section{E
+            inleitung}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--2
+[]Einleitung 
+ []
+
+./theorie.tex:3: Undefined control sequence.
+l.3 \section
+          {Theorie}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./theorie.tex:3: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \section{T
+            heorie}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./theorie.tex:4: Undefined control sequence.
+l.4 \subsection
+             {Vakuum}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 7.
+luaotfload | db : Font names database loaded from C:/texlive/2016/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc)(load luc: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc)
+./theorie.tex:7: Undefined control sequence.
+<write> ...ing: Reference `tab:bereiche' on page \thepage 
+                                                  \space undefined\on@line .
+l.7 ... lassen sich, wie Tabelle $\ref{tab:bereiche}
+                                                  $ zeigt, vier Bereiche unt...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `tab:bereiche' on page  undefined on input line 7.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 3--8
+[]Theorie
+ []
+
+
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 3--8
+[]$
+ []
+
+
+./theorie.tex:9: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \begin{table}
+               [!hht]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./theorie.tex:9: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \begin{table}[
+                !hht]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./theorie.tex:12: Undefined control sequence.
+<recently read> \midrule 
+         
+l.12  \midrule
+            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./theorie.tex:18: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \caption
+           {Bereichseinteilung des Vakuums}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./theorie.tex:20: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \end{table}
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 9--21
+[][!hht]
+ []
+
+
+Overfull \hbox (82.9447pt too wide) in paragraph at lines 9--21
+[]
+ []
+
+
+./theorie.tex:22: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 D
+    ie mittlere freie Weglänge beschreibt die durchschnittliche Wegstrecke,...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 22--24
+[]Die
+ []
+
+
+Overfull \hbox (58.45903pt too wide) detected at line 26
+\OML/cmm/m/it/10  \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10 :
+ []
+
+./theorie.tex:28: Undefined control sequence.
+l.28 \subsection
+              {Strömungsarten}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (12.08904pt too wide) in paragraph at lines 26--31
+\OML/cmm/m/it/10 k[]$
+ []
+
+
+Overfull \hbox (7.23265pt too wide) in paragraph at lines 26--31
+\OML/cmm/m/it/10 T$
+ []
+
+
+Overfull \hbox (5.20486pt too wide) in paragraph at lines 26--31
+\OML/cmm/m/it/10 d$
+ []
+
+
+Overfull \hbox (5.03125pt too wide) in paragraph at lines 26--31
+\OML/cmm/m/it/10 p$
+ []
+
+
+Overfull \hbox (13.93639pt too wide) in paragraph at lines 26--31
+\OML/cmm/m/it/10 K[]$
+ []
+
+
+Overfull \hbox (5.83336pt too wide) in paragraph at lines 26--31
+\OML/cmm/m/it/10 $
+ []
+
+
+Overfull \hbox (7.05754pt too wide) in paragraph at lines 26--31
+\OML/cmm/m/it/10 l[]$ 
+ []
+
+
+Overfull \hbox (39.50493pt too wide) detected at line 33
+\OML/cmm/m/it/10 K[] \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10 :
+ []
+
+
+Overfull \hbox (26.6333pt too wide) in paragraph at lines 33--40
+\OML/cmm/m/it/10 K[] <
+ []
+
+
+Overfull \hbox (19.44446pt too wide) in paragraph at lines 33--40
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 01$
+ []
+
+
+Overfull \hbox (43.61485pt too wide) detected at line 42
+\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10 :
+ []
+
+./theorie.tex:50: Undefined control sequence.
+l.50 \subsection
+              {Ideales Gas}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (5.17015pt too wide) in paragraph at lines 42--55
+$\OML/cmm/m/it/10 $
+ []
+
+
+Overfull \hbox (5.20601pt too wide) in paragraph at lines 42--55
+\OML/cmm/m/it/10 v$
+ []
+
+
+Overfull \hbox (13.55327pt too wide) in paragraph at lines 42--55
+\OML/cmm/m/it/10 eta$
+ []
+
+
+Overfull \hbox (29.99997pt too wide) in paragraph at lines 42--55
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 01 \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (24.4919pt too wide) in paragraph at lines 42--55
+\OML/cmm/m/it/10 K[] \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (14.44444pt too wide) in paragraph at lines 42--55
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5$
+ []
+
+
+Overfull \hbox (5.03125pt too wide) in paragraph at lines 42--55
+\OML/cmm/m/it/10 p$\nullfont ,
+ []
+
+
+Overfull \hbox (8.05556pt too wide) in paragraph at lines 42--55
+\OML/cmm/m/it/10 V$\nullfont ,
+ []
+
+
+Overfull \hbox (9.12497pt too wide) in paragraph at lines 42--55
+\OML/cmm/m/it/10 N$
+ []
+
+
+Overfull \hbox (7.23265pt too wide) in paragraph at lines 42--55
+\OML/cmm/m/it/10 T$
+ []
+
+
+Overfull \hbox (57.08891pt too wide) detected at line 57
+\OML/cmm/m/it/10 pV \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 Nk[]T:
+ []
+
+./theorie.tex:60: Undefined control sequence.
+l.60 \subsection
+              {Vakuumtechnik}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./theorie.tex:64: Undefined control sequence.
+<recently read> \subsubsection 
+               
+l.64 \subsubsection
+                 {Drehschieberpumpe}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./theorie.tex:65: Undefined control sequence.
+<write> ...rning: Reference `drehschema' on page \thepage 
+                                                  \space undefined\on@line .
+l.65 ...rehschieberpumpe ist in Abb.\ref{drehschema}
+                                                   dargestellt. Im Betrieb e...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `drehschema' on page  undefined on input line 65.
+
+
+./theorie.tex:67: LaTeX Error: Environment figure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 \begin{figure}
+                 [H]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./theorie.tex:69: Undefined control sequence.
+l.69   \includegraphics
+                     [scale=0.4]{Bilder/drehschieber.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./theorie.tex:70: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70   \caption
+             {Schematische Darstellung des Aufbaus einer Drehschieberpumpe.\...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{schemadreh}
+./theorie.tex:70: Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.70 ...us einer Drehschieberpumpe.\cite{schemadreh}
+                                                  }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `schemadreh' on page  undefined on input line 70.
+
+
+./theorie.tex:72: LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 \end{figure}
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (17.78816pt too wide) in paragraph at lines 57--73
+\OML/cmm/m/it/10 T \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (23.47575pt too wide) in paragraph at lines 57--73
+\OML/cmm/m/it/10 const$
+ []
+
+
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 57--73
+Abb.[]
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 57--73
+Drehschieberpumpe.[[]]
+ []
+
+
+./theorie.tex:74: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 \textbf{Turbomolekularpumpe}
+                               \\
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
+! Emergency stop.
+<*> theorie.tex
+            
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 35 strings out of 494577
+ 100000,89155 words of node,token memory allocated 29218 words of node memory still in use:
+   146 hlist, 5 vlist, 9 rule, 9 local_par, 1 dir, 45 math, 764 glue, 25 kern, 45 penalty, 3492 glyph, 154 attribute, 33 glue_spec, 154 attribute_list, 1 temp, 2 write nodes
+   avail lists: 2:2,4:79,5:4,7:113,8:11,9:1,10:78
+ 4201 multiletter control sequences out of 65536+600000
+ 26 fonts using 1037847 bytes
+ 18i,8n,21p,230b,108s stack positions out of 5000i,500n,10000p,200000b,100000s
+!  ==> Fatal error occurred, no output PDF file produced!
