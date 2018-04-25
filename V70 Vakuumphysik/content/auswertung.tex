@@ -3,7 +3,7 @@ Die Auswertung, genauer die Fehlerrechnung, die Plots und Ausgleichsrechnung erf
 Numpy \cite{numpy}, Uncertainties \cite{uncertainties}, Matplotlib \cite{matplotlib} und Scipy \cite{scipy} in der Programmiersprache python.
 \subsection{Fehlerrechnung}
 Zu Beginn der Auswertung sei gesagt, dass eine Ungenauigkeit von $\SI{30}{\percent}$ des analogen zum digitalen Glühkathodenvakuummessgeräts
-bei der Messung festgestellt wurde und im Folgenden berücksichtigt wurde.
+bei der Messung festgestellt und im Folgenden berücksichtigt wurde.
 Auch muss erwähnt werden, dass die Zeitmessung mit einer Handystoppuhr erfolgte und eine durch menschliche Reaktion verursachte
 Verzögerung von $\SI{180}{ms}$ beachtet wird.\cite{reaktion}
 In den nachfolgenden Messwerttabellen sind die Abweichungen schon miteingerechnet.\\
@@ -16,6 +16,11 @@ und deren Standardabweichung mit
 	\sigma_{\bar{x}} = \sqrt{\frac{1}{N(N-1)} \sum_{i}^N (x_i-\bar{x})^2}
 \end{equation}
 berechnet.
+Für die Fehlerfortpflanzung einer Variablen $x_i$ gilt
+\begin{equation}
+	\sigma = \sqrt{\sum_{i}^N \Bigl(\frac{\partial f}{\partial x_i} \sigma_{x_i}\Bigr)^2}.
+	\label{eq:gaussfehler}
+\end{equation}
 \subsection{Bestimmung des Volumens}
 Für die folgende Auswertung ist es unumgänglich, das Volumen des Messaufbaus zu bestimmen.
 Tabelle $\ref{tab:Bauteile}$ zeigt, aufgelistet nach Pumpen- und Messart die verwendeten Bauteile und ihre Volumina.
@@ -45,7 +50,7 @@ mit der Drehschieberpumpe DL und mit der Turbopumpe TL unterschieden.\newline
 	\caption{Auflistung der Bauteile.\cite{anleitung}}
 	\label{tab:Bauteile}
 \end{table}
-Die Teilvolumina der jeweiligen Aufbauten werden addiert und im Folgenden angegeben. Die Fehlerberechnung erfolgt mit Formel ALLGEMEIN!!!.
+Die Teilvolumina der jeweiligen Aufbauten werden addiert und im Folgenden angegeben. Die Fehlerberechnung erfolgt mit Formel $\ref{eq:gaussfehler}$.
 Es ergeben sich
 \begin{align*}
    V_\text{TE}=\SI{10,0 \pm 0,8}{l}\\
@@ -73,7 +78,7 @@ $(6,0 \pm \, 0,6)\cdot 10^{-4}$ & $-(2,62 \pm \, 0,14)$ & 2,82 & 3,13 & 2,82 & 3
 $(3,0 \pm \, 0,3)\cdot 10^{-5}$ & $-(3,34 \pm \, 0,15)$ & 4,01 & 4,04 & 3,99 & 3,87 & 3,93 & 4,02 & 3,93 & 4,03 & $3,94 \pm \, 0,04$\\
 $(6,0 \pm \, 0,6)\cdot 10^{-5}$ & $-(5,20 \pm \, 0,18)$ & 6,52 & 6,86 & 6,61 & 7,04 & 6,44 & 6,72 & 6,71 & 6,70 & $6,60 \pm \, 0,10$\\
 $(3,0 \pm \, 0,3)\cdot 10^{-5}$ & $-(6,35 \pm \, 0,28)$ & 10,14 & 10,03 & 10,00 & 9,44 & 10,29 & 9,42 & 9,06 & 8,94 & $9,67 \pm \, 0,20$\\
-$(1,6 \pm \, 0,2)\cdot 10^{-5}$& - & - &  -& -& -& -& -& -& -& - \\
+$(1,6 \pm \, 0,2)\cdot 10^{-5}$ & - & - &  -& -& -& -& -& -& -& - \\
 \end{tabular}
 \caption{Messwerte für die Evakuierungskurve der Turbomolekularpumpe.}
 \end{table}
@@ -89,11 +94,11 @@ $(5,0 \pm \, 0,5)\cdot 10^{-5}$ &0 &0 &0 &0\\
 $(8,0 \pm \, 0,8)\cdot 10^{-5}$ &   0,32 &  0,66 &  0,39 & $0,46 \pm 0,08$\\
 $(2,0 \pm \, 0,2)\cdot 10^{-4}$ &   1,71  &  1,83 &  1,65 & $1,73 \pm 0,04 $\\
 $(4,0 \pm \, 0,4)\cdot 10^{-4}$ &   5,91 &  6,02 &  6,40 & $6,11 \pm 0,12 $\\
-$(8,0 \pm \, 0,8)\cdot 10^{-4}$  &   13,05 &  13,14 &  14,02 & $13,40 \pm 0,25 $\\
+$(8,0 \pm \, 0,8)\cdot 10^{-4}$ &   13,05 &  13,14 &  14,02 & $13,40 \pm 0,25 $\\
 $(2,0 \pm \, 0,2)\cdot 10^{-3}$ &   34,01 &  34,50 &  36,37 & $35,96 \pm 0,59 $\\
 $(4,0 \pm \, 0,4)\cdot 10^{-3}$ &  61,18 & 62,18 & 66,18 & $63,18 \pm 1,25 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck $(5,0 \pm \, 0,5)\cdot 10^{-5} \, \si{bar}$}
+\caption{Gleichgewichtsdruck bei $(5,0 \pm \, 0,5)\cdot 10^{-5} \, \si{mbar}$}
 \end{table}
 
 \begin{table}[H]
@@ -106,11 +111,11 @@ $(10 \pm \, 1)\cdot 10^{-5}$ &0 &0 &0 &0\\
 $(3,0 \pm \, 0,3)\cdot 10^{-4}$ &   1,22 &  0,96 &  0,70 & $0,96 \pm 0,06$\\
 $(6,0 \pm \, 0,6)\cdot 10^{-4}$ &   3,00  &  2,77 &  2,69 & $2,82 \pm 0,08 $\\
 $(9,0 \pm \, 0,9)\cdot 10^{-4}$ &   4,85 &  4,56 &  4,47 & $4,63 \pm 0,10 $\\
-$(2,0 \pm \, 0,2)\cdot 10^{-3}$  &   10,88 &  10,78 &  11,30 & $11,00 \pm 0,13 $\\
+$(2,0 \pm \, 0,2)\cdot 10^{-3}$ &   10,88 &  10,78 &  11,30 & $11,00 \pm 0,13 $\\
 $(4,0 \pm \, 0,4)\cdot 10^{-3}$ &   20,09 &  20,00 &  19,61 & $19,90 \pm 0,12 $\\
 $(6,0 \pm \, 0,6)\cdot 10^{-3}$ &  28,26 & 27,78 & 27,36 & $27,80 \pm 0,21 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck $(10 \pm \, 1)\cdot 10^{-5}$}
+\caption{Gleichgewichtsdruck bei $(10 \pm \, 1)\cdot 10^{-5} \, \si{mbar}$}
 \end{table}
 
 \begin{table}[H]
@@ -123,11 +128,11 @@ $(1,5 \pm \, 0,2)\cdot 10^{-5}$ &0 &0 &0 &0\\
 $(3,0 \pm \, 0,3)\cdot 10^{-4}$ &   0,57 &  0,40 &  0,40 & $0,46 \pm 0,05$\\
 $(6,0 \pm \, 0,6)\cdot 10^{-4}$ &   1,27  &  1,36 &  1,40 & $1,34 \pm 0,03 $\\
 $(9,0 \pm \, 0,9)\cdot 10^{-4}$ &   2,71 &  2,55 &  2,48 & $2,58 \pm 0,06 $\\
-$(2,0 \pm \, 0,2)\cdot 10^{-3}$  &   6,70 &  6,31 &  6,22 & $6,41 \pm 0,12 $\\
+$(2,0 \pm \, 0,2)\cdot 10^{-3}$ &   6,70 &  6,31 &  6,22 & $6,41 \pm 0,12 $\\
 $(4,0 \pm \, 0,4)\cdot 10^{-3}$ &   12,30 &  11,94 &  11,89 & $12,04 \pm 0,11 $\\
 $(6,0 \pm \, 0,6)\cdot 10^{-3}$ &  17,37 & 17,31 & 17,10 & $17,26 \pm 0,07 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck $(1,5 \pm \, 0,2)\cdot 10^{-4}$}
+\caption{Gleichgewichtsdruck bei $(1,5 \pm \, 0,2)\cdot 10^{-4} \, \si{mbar}$}
 \end{table}
 
 \begin{table}[H]
@@ -140,11 +145,11 @@ $(2,0 \pm \, 0,2)\cdot 10^{-4}$ &0 &0 &0 &0\\
 $(5,0 \pm \, 0,5)\cdot 10^{-4}$ &   0,64 &  0,82 &  0,74 & $0,73 \pm 0,04$\\
 $(8,0 \pm \, 0,8)\cdot 10^{-4}$ &   1,57  &  1,83 &  1,65 & $1,68 \pm 0,06 $\\
 $(2,0 \pm \, 0,2)\cdot 10^{-3}$ &   4,76 &  4,69 &  5,04 & $4,83 \pm 0,09 $\\
-$(4,0 \pm \, 0,4)\cdot 10^{-3}$  &   9,57 &  9,77 &  9,71 & $9,68 \pm 0,05 $\\
+$(4,0 \pm \, 0,4)\cdot 10^{-3}$ &   9,57 &  9,77 &  9,71 & $9,68 \pm 0,05 $\\
 $(6,0 \pm \, 0,6)\cdot 10^{-3}$ &   13,67 &  13,94 &  13,78 & $13,80 \pm 0,06 $\\
 $(8,0 \pm \, 0,8)\cdot 10^{-3}$ &  17,50 & 17,87 & 17,59 & $17,65 \pm 0,09 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck $(2,0 \pm \, 0,2)\cdot 10^{-4}$}
+\caption{Gleichgewichtsdruck bei $(2,0 \pm \, 0,2)\cdot 10^{-4} \, \si{mbar}$}
 \end{table}
 
 
@@ -191,7 +196,7 @@ $6,0 \pm \, 0,6$ &   40,78 &  38,00 &  39,19 & $39,32 \pm 0,66 $\\
 $10,0 \pm \, 0,1$ &   73,05 &  70,53 &  71,96 & $71,85 \pm 0,60 $\\
 $20,0 \pm \, 0,2$ &   172,71 &  148,99 &  155,35 & $159,02 \pm 5,79 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck $1,0 \pm \, 0,1$}
+\caption{Gleichgewichtsdruck bei $(1,0 \pm \, 0,1)  \, \si{mbar}$}
 \end{table}
 
 \begin{table}[H]
@@ -207,7 +212,7 @@ $4,0 \pm \, 0,4$ &   32,99 &  31,52 &  32,01 & $32,17 \pm 0,35 $\\
 $6,0 \pm \, 0,6$  &   50,15 &  50,65 &  49,51 & $50,10 \pm 0,27 $\\
 $10,0 \pm \, 0,1$ &   88,14 &  90,21 &  90,73 & $89,69 \pm 0,65 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck $0,80 \pm \, 0,08$}
+\caption{Gleichgewichtsdruck bei $(0,80 \pm \, 0,08) \, \si{mbar}$}
 \end{table}
 
 \begin{table}[H]
@@ -220,10 +225,10 @@ $0,40 \pm \, 0,04$ &0 &0 &0 &0\\
 $0,60 \pm \, 0,06$ &   4,26 &  4,72 &  4,45 & $4,48 \pm 0,11$\\
 $1,0 \pm \, 0,1$ &   16,84  &  17,05 &  17,29 & $17,06 \pm 0,11 $\\
 $2,0 \pm \, 0,2$ &   45,09 &  43,40 &  44,21 & $44,23 \pm 0,40 $\\
-$4,0 \pm \, 0,4$  &   93,98 &  90,09 & 90,21 & $91,43 \pm 1,04 $\\
+$4,0 \pm \, 0,4$ &   93,98 &  90,09 & 90,21 & $91,43 \pm 1,04 $\\
 $6,0 \pm \, 0,6$ &   132,43 &  131,15 &  133,37 & $132,32 \pm 0,53 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck $0,40 \pm \, 0,04$}
+\caption{Gleichgewichtsdruck bei $(0,40 \pm \, 0,04) \, \si{mbar}$}
 \end{table}
 
 \begin{table}[H]
@@ -239,5 +244,5 @@ $0,30 \pm \, 0,03$ &   18,89 &  21,62 &  19,79 & $(20,10 \pm 0,66) $\\
 $0,40 \pm \, 0,04$ &   45,77 &  46,39 & 43,27 & $(45,14 \pm 0,78) $\\
 $0,60 \pm \, 0,06$ &   95,86 &  92,23 &  94,75 & $(94,28 \pm 0,88) $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck $0,10 \pm \, 0,01$}
+\caption{Gleichgewichtsdruck bei $(0,10 \pm \, 0,01) \, \si{mbar}$}
 \end{table}
