@@ -97,6 +97,26 @@ $(1,6 \pm \, 0,2)\cdot 10^{-5}$ & - & - &  -& -& -& -& -& -& -& - \\
   \label{turboplot}
 \end{figure}
 
+In der logarithmischen Darstellung wurden die Messwerte unterteilt und zwei lineare Ausgleichsrechnungen durchgeführt, da für die unterschiedlichen Druckbereiche das Saugvermögen nicht konstant ist.
+Die Ausgleichsgeraden haben die Form
+\begin{equation}
+ h(x)=mx+b.
+\end{equation}
+Aus den Regressionsparametern wird das Saugvermögen durch $S=-mV$ bestimmt.
+
+Bereich 1: $8 \cdot 10^{-3} \, \si{mbar} \geq b \geq 6 \cdot 10^{-4} \, \si{mbar}$\\
+\begin{align*}
+	m_1=& -\SI{0,91 \pm 0,09}{1/s}\\
+	b_1=& \si{0,18 \pm 0,16}\\
+	S_1=& \SI{9,1 \pm 1,2}{1/s}
+\end{align*}
+Bereich 2: $6 \cdot 10^{-4} \, \si{mbar} \geq b \geq 3 \cdot 10^{-5} \, \si{mbar}$\\
+\begin{align*}
+	m_2=& -\SI{0,52 \pm 0,09}{1/s}\\
+	b_2=& -\si{0,1,45 \pm 0,66}\\
+	S_2=& \SI{5,2 \pm 1,0}{1/s}
+\end{align*}
+
 \subsubsection{Leckratenmessung}
 \begin{table}[H]
 \centering
@@ -231,6 +251,31 @@ Es folgt die graphische Darstellung der logarithmierten Werte aus Tabelle $\ref{
   \caption{Evakuierungskurve Drehschieberpumpe.}
   \label{evakuierungdreh}
 \end{figure}
+
+Für die drei Bereiche wurden lineare Ausgleichsgeraden der Form
+\begin{equation}
+	h(x)=mx+b
+\end{equation}
+erstellt.\\
+Durch die Regressionsberechnung ergeben sich folgende Parameter für die drei Bereiche und das daraus durch $S=-mV$ errechnete Saugvermögen:\\\vspace{1cm}
+Bereich 1: $\SI{1000}{mbar} \geq p \geq \SI{10}{mbar}$\\
+\begin{align*}
+	m_1=& -\SI{0,11 \pm 0,02}{1/s}\\
+	b_1=& \si{0,37 \pm 0,70}\\
+	S_1=& \SI{1,20 \pm 0,24}{1/s}
+\end{align*}
+Bereich 2: $\SI{10}{mbar} \geq p \geq \SI{0,6}{mbar}$\\
+\begin{align*}
+	m_2=& -\SI{0,10 \pm 0,00}{1/s}\\
+	b_2=& \si{0,22 \pm 0,11}\\
+	S_2=& \SI{1,09 \pm 0,08}{1/s}
+\end{align*}
+Bereich 3: $\SI{0,6}{mbar} \geq p \geq \SI{0,06}{mbar}$\\
+\begin{align*}
+	m_3=& -\SI{0,07 \pm 0,00}{1/s}\\
+	b_3=& -\si{(1,93 \pm 0,27)}\\
+	S_3=& \SI{0,76 \pm 0,06}{1/s}
+\end{align*}
 
 \subsubsection{Leckratenmessung}
 
