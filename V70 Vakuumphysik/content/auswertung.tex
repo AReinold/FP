@@ -4,8 +4,9 @@ Numpy \cite{numpy}, Uncertainties \cite{uncertainties}, Matplotlib \cite{matplot
 \subsection{Fehlerrechnung}
 Zu Beginn der Auswertung sei gesagt, dass eine Ungenauigkeit von $\SI{30}{\percent}$ des analogen zum digitalen Glühkathodenvakuummessgeräts
 bei der Messung festgestellt und im Folgenden berücksichtigt wurde.
+Für das Pirani-Messgerät ist eine Ungenauigkeit von $\SI{10}{\percent}$ angegeben\cite{anleitung}.
 Auch muss erwähnt werden, dass die Zeitmessung mit einer Handystoppuhr erfolgte und eine durch menschliche Reaktion verursachte
-Verzögerung von $\SI{180}{ms}$ beachtet wird.\cite{reaktion}
+Verzögerung von $\SI{180}{ms}$ beachtet wird\cite{reaktion}.
 In den nachfolgenden Messwerttabellen sind die Abweichungen schon miteingerechnet.\\
 Die Mittelwerte werden nach
 \begin{equation}
@@ -67,7 +68,6 @@ Turbo SST81 der Firma ILMAC mit einem Saugvermögen von $\SI{77}{l/s}$
 \begin{table}[H]
 \tiny
 \centering
-\label{tab:EvakuierungskurveTurbo}
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c}
 {$p \:/\: \si{mbar}$} & {$\ln{\Bigl( \frac{p(t)-p_E}{p_0-p_E}\Bigr)}$} & {$t_1 \:/\: \si{s} $} & {$t_2 \:/\: \si{s}$} & {$t_3 \:/\: \si{s}$} & {$t_4 \:/\: \si{s}$} & {$t_5 \:/\: \si{s}$} & {$t_6 \:/\: \si{s}$}& {$t_7 \:/\: \si{s}$} & {$t_8 \:/\: \si{s}$} & {$\bar{t} \:/\: \si{s}$}\\
 \midrule
@@ -81,6 +81,7 @@ $(3,0 \pm \, 0,3)\cdot 10^{-5}$ & $-(6,35 \pm \, 0,28)$ & 10,14 & 10,03 & 10,00 
 $(1,6 \pm \, 0,2)\cdot 10^{-5}$ & - & - &  -& -& -& -& -& -& -& - \\
 \end{tabular}
 \caption{Messwerte für die Evakuierungskurve der Turbomolekularpumpe.}
+\label{tab:EvakuierungskurveTurbo}
 \end{table}
 
 \begin{figure}[H]
@@ -109,21 +110,20 @@ Bereich 1: $8 \cdot 10^{-3} \, \si{mbar} \geq b \geq 6 \cdot 10^{-4} \, \si{mbar
 \begin{align*}
 	m_1=& -\SI{0,91 \pm 0,09}{1/s}\\
 	b_1=& \si{0,18 \pm 0,16}\\
-	S_1=& \SI{9,1 \pm 1,2}{1/s}
+	S_1=& \SI{9,1 \pm 1,2}{l/s}
 \end{align*}
 Bereich 2: $6 \cdot 10^{-4} \, \si{mbar} \geq b \geq 3 \cdot 10^{-5} \, \si{mbar}$\\
 \begin{align*}
 	m_2=& -\SI{0,52 \pm 0,09}{1/s}\\
 	b_2=& -\si{0,1,45 \pm 0,66}\\
-	S_2=& \SI{5,2 \pm 1,0}{1/s}
+	S_2=& \SI{5,2 \pm 1,0}{l/s}
 \end{align*}
 
 \subsubsection{Leckratenmessung}
-Die folgenden Tabllen \ref{tab:leck_Turbo1}, \ref{tab:leck_Turbo2}, \ref{tab:leck_Turbo3} und \ref{tab:leck_Turbo4} zeigen die Messwerte zur Leckratenmessung der Turbomolekularpumpe.
+Die folgenden Tabllen $\ref{tab:leck_Turbo1}$, $\ref{tab:leck_Turbo2}$, $\ref{tab:leck_Turbo3}$ und $\ref{tab:leck_Turbo4}$ zeigen die Messwerte zur Leckratenmessung der Turbomolekularpumpe.
 
 \begin{table}[H]
 \centering
-\label{tab:leck_Turbo1}
 \begin{tabular}{c|c|c|c|c}
 	{$p \:/\: \si{mbar}$} & {$t_1 \:/\: \si{s} $} & {$t_2 \:/\: \si{s} $} & {$t_3 \:/\: \si{s} $} & {$\bar{t} \:/\: \si{s}$}\\
 \midrule
@@ -136,11 +136,11 @@ $(2,0 \pm \, 0,2)\cdot 10^{-3}$ &   34,01 &  34,50 &  36,37 & $35,96 \pm 0,59 $\
 $(4,0 \pm \, 0,4)\cdot 10^{-3}$ &  61,18 & 62,18 & 66,18 & $63,18 \pm 1,25 $\\
 \end{tabular}
 \caption{Gleichgewichtsdruck bei $p_G=(5,0 \pm \, 0,5)\cdot 10^{-5} \, \si{mbar}$}
+\label{tab:leck_Turbo1}
 \end{table}
 
 \begin{table}[H]
 \centering
-\label{tab:leck_Turbo2}
 \begin{tabular}{c|c|c|c|c}
 	{$p \:/\: \si{mbar}$} & {$t_1 \:/\: \si{s} $} & {$t_2 \:/\: \si{s} $} & {$t_3 \:/\: \si{s} $} & {$\bar{t} \:/\: \si{s}$}\\
 \midrule
@@ -153,11 +153,11 @@ $(4,0 \pm \, 0,4)\cdot 10^{-3}$ &   20,09 &  20,00 &  19,61 & $19,90 \pm 0,12 $\
 $(6,0 \pm \, 0,6)\cdot 10^{-3}$ &  28,26 & 27,78 & 27,36 & $27,80 \pm 0,21 $\\
 \end{tabular}
 \caption{Gleichgewichtsdruck bei $p_G=(1,0 \pm \, 0,1)\cdot 10^{-5} \, \si{mbar}$}
+\label{tab:leck_Turbo2}
 \end{table}
 
 \begin{table}[H]
 \centering
-\label{tab:leck_Turbo3}
 \begin{tabular}{c|c|c|c|c}
 	{$p \:/\: \si{mbar}$} & {$t_1 \:/\: \si{s} $} & {$t_2 \:/\: \si{s} $} & {$t_3 \:/\: \si{s} $} & {$\bar{t} \:/\: \si{s}$}\\
 \midrule
@@ -170,11 +170,11 @@ $(4,0 \pm \, 0,4)\cdot 10^{-3}$ &   12,30 &  11,94 &  11,89 & $12,04 \pm 0,11 $\
 $(6,0 \pm \, 0,6)\cdot 10^{-3}$ &  17,37 & 17,31 & 17,10 & $17,26 \pm 0,07 $\\
 \end{tabular}
 \caption{Gleichgewichtsdruck bei $p_G=(1,5 \pm \, 0,2)\cdot 10^{-4} \, \si{mbar}$}
+\label{tab:leck_Turbo3}
 \end{table}
 
 \begin{table}[H]
 \centering
-\label{tab:leck_Turbo4}
 \begin{tabular}{c|c|c|c|c}
 	{$p \:/\: \si{mbar}$} & {$t_1 \:/\: \si{s} $} & {$t_2 \:/\: \si{s} $} & {$t_3 \:/\: \si{s} $} & {$\bar{t} \:/\: \si{s}$}\\
 \midrule
@@ -187,8 +187,9 @@ $(6,0 \pm \, 0,6)\cdot 10^{-3}$ &   13,67 &  13,94 &  13,78 & $13,80 \pm 0,06 $\
 $(8,0 \pm \, 0,8)\cdot 10^{-3}$ &  17,50 & 17,87 & 17,59 & $17,65 \pm 0,09 $\\
 \end{tabular}
 \caption{Gleichgewichtsdruck bei $p_G=(2,0 \pm \, 0,2)\cdot 10^{-4} \, \si{mbar}$}
+\label{tab:leck_Turbo4}
 \end{table}
-Die Daten aus den vorheringen Tabellen sind in den Abbildungen \ref{leckrate1}, \ref{leckrate2}, \ref{leckrate3} und \ref{leckrate4} graphisch dargestellt.
+Die Daten aus den vorheringen Tabellen sind in den Abbildungen $\ref{leckrate1}$, $\ref{leckrate2}$, $\ref{leckrate3}$ und $\ref{leckrate4}$ graphisch dargestellt.
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{bilder/leckratefit1.png}
@@ -226,28 +227,28 @@ Abbildung $\ref{leckrate1}$:
 		p_G=& (5,0 \pm \, 0,5)\cdot 10^{-5} \, \si{mbar}\\
 		m_1=& (5,48 \pm 0,22)\cdot 10^{-5} \, \si{mbar/s}\\
 		b_1=& (6,80 \pm 1,48)\cdot 10^{-5} \, \si{mbar}\\
-		S_1=& \SI{11,0 \pm 1,5}{1/s}
+		S_1=& \SI{11,0 \pm 1,5}{l/s}
 	\end{align*}
 	Abbildung $\ref{leckrate2}$:
 		\begin{align*}
 			p_G=& (10 \pm \, 1)\cdot 10^{-5} \, \si{mbar}\\
 			m_2=& (1,78 \pm 0,03)\cdot 10^{-4} \, \si{mbar/s}\\
 			b_2=& (1,04 \pm 0,14)\cdot 10^{-4} \, \si{mbar}\\
-			S_2=& \SI{17,8 \pm 2,3}{1/s}
+			S_2=& \SI{17,8 \pm 2,3}{l/s}
 		\end{align*}
 		Abbildung $\ref{leckrate3}$:
 			\begin{align*}
 				p_G=& (1,5 \pm \, 0,2)\cdot 10^{-4} \, \si{mbar}\\
 				m_3=& (3,36 \pm 0,09)\cdot 10^{-4} \, \si{mbar/s}\\
 				b_3=& (7,87 \pm 7,30)\cdot 10^{-5} \, \si{mbar}\\
-				S_3=& \SI{22,4 \pm 3,5}{1/s}
+				S_3=& \SI{22,4 \pm 3,5}{l/s}
 			\end{align*}
 		Abbildung $\ref{leckrate4}$:
 			\begin{align*}
 				p_G=& (2,0 \pm \, 0,2)\cdot 10^{-4} \, \si{mbar}\\
 				m_4=& (4,36 \pm \, 0,12)\cdot 10^{-4} \, \si{mbar/s}\\
 				b_4=& (5,60 \pm \, 1,13)\cdot 10^{-4} \, \si{mbar}\\
-				S_4=& \SI{21,8 \pm 2,9}{1/s}
+				S_4=& \SI{21,8 \pm 2,9}{l/s}
 			\end{align*}
 
 \subsection{Drehschieberpumpe}
@@ -258,7 +259,6 @@ Die folgende Tabelle zeigt die Messwerte zur Bestimmung der Evakuierungskurve.
 \subsubsection{Evakuierungsmessung}
 \begin{table}[H]
 \centering
-\label{tab:EvakuierungskurveDreh}
 \begin{tabular}{c|c|c|c|c|c|c|c}
 {$p \:/\: \si{mbar}$} & {$\ln{\Bigl( \frac{p(t)-p_E}{p_0-p_E}\Bigr)}$} & {$t_1 \:/\: \si{s} $} & {$t_2 \:/\: \si{s}$} & {$t_3 \:/\: \si{s}$} & {$t_4 \:/\: \si{s}$} & {$t_5 \:/\: \si{s}$} & {$\bar{t} \:/\: \si{s}$}\\
 \midrule
@@ -278,6 +278,7 @@ $(0,06 \pm \, 0,02)$ & -(10,8 \pm \, 1,2) & 125,13 & 113,88 & 128,72 & 129,62 & 
 $(0,04 \pm \, 0,01)$ & - & - & - & - & - & - & -
 \end{tabular}
 \caption{Messwerte für die Evakuierungskurve der Drehschieberpumpe.}
+\label{tab:EvakuierungskurveDreh}
 \end{table}
 
 
@@ -308,19 +309,19 @@ Bereich 1: $\SI{1000}{mbar} \geq p \geq \SI{10}{mbar}$\\
 \begin{align*}
 	m_1=& -\SI{0,11 \pm 0,02}{1/s}\\
 	b_1=& \si{0,37 \pm 0,70}\\
-	S_1=& \SI{1,20 \pm 0,24}{1/s}
+	S_1=& \SI{1,20 \pm 0,24}{l/s}
 \end{align*}
 Bereich 2: $\SI{10}{mbar} \geq p \geq \SI{0,6}{mbar}$\\
 \begin{align*}
 	m_2=& -\SI{0,10 \pm 0,00}{1/s}\\
 	b_2=& \si{0,22 \pm 0,11}\\
-	S_2=& \SI{1,09 \pm 0,08}{1/s}
+	S_2=& \SI{1,09 \pm 0,08}{l/s}
 \end{align*}
 Bereich 3: $\SI{0,6}{mbar} \geq p \geq \SI{0,06}{mbar}$\\
 \begin{align*}
 	m_3=& -\SI{0,07 \pm 0,00}{1/s}\\
 	b_3=& -\si{(1,93 \pm 0,27)}\\
-	S_3=& \SI{0,76 \pm 0,06}{1/s}
+	S_3=& \SI{0,76 \pm 0,06}{l/s}
 \end{align*}
 
 \subsubsection{Leckratenmessung}
@@ -328,7 +329,6 @@ Ebenso wie für die Turbopumpe auch, folgen zunächst die Messwerttabellen für 
 unter den unterschiedlichen Gleichgewichtsdrücken $\ref{tab:leck_Dreh1}$, $\ref{tab:leck_Dreh2}$, $\ref{tab:leck_Dreh3}$ und $\ref{tab:leck_Dreh4}$.
 \begin{table}[H]
 \centering
-\label{tab:leck_Dreh1}
 \begin{tabular}{c|c|c|c|c}
 	{$p \:/\: \si{mbar}$} & {$t_1 \:/\: \si{s} $} & {$t_2 \:/\: \si{s} $} & {$t_3 \:/\: \si{s} $} & {$\bar{t} \:/\: \si{s}$}\\
 \midrule
@@ -340,11 +340,11 @@ $10,0 \pm \, 0,1$ &   73,05 &  70,53 &  71,96 & $71,85 \pm 0,60 $\\
 $20,0 \pm \, 0,2$ &   172,71 &  148,99 &  155,35 & $159,02 \pm 5,79 $\\
 \end{tabular}
 \caption{Gleichgewichtsdruck bei $p_G=(1,0 \pm \, 0,1)  \, \si{mbar}$}
+\label{tab:leck_Dreh1}
 \end{table}
 
 \begin{table}[H]
 \centering
-\label{tab:leck_Dreh2}
 \begin{tabular}{c|c|c|c|c}
 	{$p \:/\: \si{mbar}$} & {$t_1 \:/\: \si{s} $} & {$t_2 \:/\: \si{s} $} & {$t_3 \:/\: \si{s} $} & {$\bar{t} \:/\: \si{s}$}\\
 \midrule
@@ -356,11 +356,11 @@ $6,0 \pm \, 0,6$  &   50,15 &  50,65 &  49,51 & $50,10 \pm 0,27 $\\
 $10,0 \pm \, 0,1$ &   88,14 &  90,21 &  90,73 & $89,69 \pm 0,65 $\\
 \end{tabular}
 \caption{Gleichgewichtsdruck bei $p_G=(0,80 \pm \, 0,08) \, \si{mbar}$}
+\label{tab:leck_Dreh2}
 \end{table}
 
 \begin{table}[H]
 \centering
-\label{tab:leck_Dreh3}
 \begin{tabular}{c|c|c|c|c}
 	{$p \:/\: \si{mbar}$} & {$t_1 \:/\: \si{s} $} & {$t_2 \:/\: \si{s} $} & {$t_3 \:/\: \si{s} $} & {$\bar{t} \:/\: \si{s}$}\\
 \midrule
@@ -372,11 +372,11 @@ $4,0 \pm \, 0,4$ &   93,98 &  90,09 & 90,21 & $91,43 \pm 1,04 $\\
 $6,0 \pm \, 0,6$ &   132,43 &  131,15 &  133,37 & $132,32 \pm 0,53 $\\
 \end{tabular}
 \caption{Gleichgewichtsdruck bei $p_G=(0,40 \pm \, 0,04) \, \si{mbar}$}
+\label{tab:leck_Dreh3}
 \end{table}
 
 \begin{table}[H]
 \centering
-\label{tab:leck_Dreh4}
 \begin{tabular}{c|c|c|c|c}
 	{$p \:/\: \si{mbar}$} & {$t_1 \:/\: \si{s} $} & {$t_2 \:/\: \si{s} $} & {$t_3 \:/\: \si{s} $} & {$\bar{t} \:/\: \si{s}$}\\
 \midrule
@@ -388,6 +388,7 @@ $0,40 \pm \, 0,04$ &   45,77 &  46,39 & 43,27 & $(45,14 \pm 0,78) $\\
 $0,60 \pm \, 0,06$ &   95,86 &  92,23 &  94,75 & $(94,28 \pm 0,88) $\\
 \end{tabular}
 \caption{Gleichgewichtsdruck bei $p_G=(0,10 \pm \, 0,01) \, \si{mbar}$}
+\label{tab:leck_Dreh4}
 \end{table}
 Anschließend lässt sich die graphische Darstellung in den Abbildungen $\ref{leckdreh1}$, $\ref{leckdreh2}$, $\ref{leckdreh3}$ und $\ref{leckdreh4}$.
 \begin{figure}[H]
@@ -421,26 +422,26 @@ Abbildung $\ref{leckdreh1}$:
 		p_G=& (1,0 \pm \, 0,1)  \, \si{mbar}\\
 		m_1=& (0,12 \pm 0,00) \, \si{mbar/s}\\
 		b_1=& (1,11 \pm 0,12) \, \si{mbar}\\
-		S_1=& \SI{1,31 \pm 0,16}{1/s}
+		S_1=& \SI{1,31 \pm 0,16}{l/s}
 	\end{align*}
 	Abbildung $\ref{leckdreh2}$:
 		\begin{align*}
 			p_G=& (0,80 \pm \, 0,08) \, \si{mbar}\\
 			m_2=& (0,10 \pm 0,00) \, \si{mbar/s}\\
 			b_2=& (0,77 \pm 0,04) \, \si{mbar}\\
-			S_2=& \SI{1,36 \pm 0,17}{1/s}
+			S_2=& \SI{1,36 \pm 0,17}{l/s}
 		\end{align*}
 		Abbildung $\ref{leckdreh3}$:
 			\begin{align*}
 				p_G=& (0,40 \pm \, 0,04) \, \si{mbar}\\
 				m_3=& (0,04 \pm 0,00)\, \si{mbar/s}\\
 				b_3=& (0,31 \pm 0,08) \, \si{mbar}\\
-				S_3=& \SI{1,09 \pm 0,14}{1/s}
+				S_3=& \SI{1,09 \pm 0,14}{l/s}
 			\end{align*}
 		Abbildung $\ref{leckdreh4}$:
 			\begin{align*}
 				p_G=& (0,10 \pm \, 0,01) \, \si{mbar}\\
 				m_4=& (0,01 \pm \, 0,00) \, \si{mbar/s}\\
 				b_4=& (0,15 \pm \, 0,02) \, \si{mbar}\\
-				S_4=& \SI{1,09 \pm 0,14}{1/s}
+				S_4=& \SI{1,09 \pm 0,14}{l/s}
 			\end{align*}
