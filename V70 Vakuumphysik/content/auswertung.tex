@@ -85,24 +85,25 @@ $(1,6 \pm \, 0,2)\cdot 10^{-5}$ & - & - &  -& -& -& -& -& -& -& - \\
 
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.27]{bilder/the final final plot.png}
+  \includegraphics[width=14cm]{bilder/the final final plot.png}
   \caption{Exponentielle Evakuierungskurve Turbomolekularpumpe 3.}
   \label{turboexponential}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.42]{bilder/turbodruck plot.png}
+  \includegraphics[width=14cm]{bilder/turbodruck plot.png}
   \caption{Linearer Plot Evakuierungskurve Turbomolekularpumpe.}
   \label{turboplot}
 \end{figure}
-
-In der logarithmischen Darstellung wurden die Messwerte unterteilt und zwei lineare Ausgleichsrechnungen durchgeführt, da für die unterschiedlichen Druckbereiche das Saugvermögen nicht konstant ist.
+Abbildung $\ref{turboecponential}$ zeigt die Messwerte aus Tabelle $\ref{tab:EvakuierungskurveTurbo}$ aufgetragen.
+Es zeigt sich ein exonentieller Zusammenhang.
+In der logarithmischen Darstellung (Abbildung $\ref{turboplot}$) wurden die Messwerte unterteilt und zwei lineare Ausgleichsrechnungen durchgeführt, da für die unterschiedlichen Druckbereiche das Saugvermögen nicht konstant ist.
 Die Ausgleichsgeraden haben die Form
 \begin{equation}
  h(x)=mx+b.
 \end{equation}
-Aus den Regressionsparametern wird das Saugvermögen durch $S=-mV$ bestimmt.
+Aus den Regressionsparametern wird das Saugvermögen durch $S=-mV$ bestimmt.\\
 
 Bereich 1: $8 \cdot 10^{-3} \, \si{mbar} \geq b \geq 6 \cdot 10^{-4} \, \si{mbar}$\\
 \begin{align*}
@@ -118,6 +119,8 @@ Bereich 2: $6 \cdot 10^{-4} \, \si{mbar} \geq b \geq 3 \cdot 10^{-5} \, \si{mbar
 \end{align*}
 
 \subsubsection{Leckratenmessung}
+Die folgenden Tabllen \ref{tab:leck_Turbo1}, \ref{tab:leck_Turbo2}, \ref{tab:leck_Turbo3} und \ref{tab:leck_Turbo4} zeigen die Messwerte zur Leckratenmessung der Turbomolekularpumpe.
+
 \begin{table}[H]
 \centering
 \label{tab:leck_Turbo1}
@@ -149,7 +152,7 @@ $(2,0 \pm \, 0,2)\cdot 10^{-3}$ &   10,88 &  10,78 &  11,30 & $11,00 \pm 0,13 $\
 $(4,0 \pm \, 0,4)\cdot 10^{-3}$ &   20,09 &  20,00 &  19,61 & $19,90 \pm 0,12 $\\
 $(6,0 \pm \, 0,6)\cdot 10^{-3}$ &  28,26 & 27,78 & 27,36 & $27,80 \pm 0,21 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck bei $p_G=(10 \pm \, 1)\cdot 10^{-5} \, \si{mbar}$}
+\caption{Gleichgewichtsdruck bei $p_G=(1,0 \pm \, 0,1)\cdot 10^{-5} \, \si{mbar}$}
 \end{table}
 
 \begin{table}[H]
@@ -185,31 +188,67 @@ $(8,0 \pm \, 0,8)\cdot 10^{-3}$ &  17,50 & 17,87 & 17,59 & $17,65 \pm 0,09 $\\
 \end{tabular}
 \caption{Gleichgewichtsdruck bei $p_G=(2,0 \pm \, 0,2)\cdot 10^{-4} \, \si{mbar}$}
 \end{table}
-
+Die Daten aus den vorheringen Tabellen sind in den Abbildungen \ref{leckrate1}, \ref{leckrate2}, \ref{leckrate3} und \ref{leckrate4} graphisch dargestellt.
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.36]{bilder/leckratefit1.png}
+  \includegraphics[width=14cm]{bilder/leckratefit1.png}
   \caption{Leckrate Drehschieberpumpe 1.}
   \label{leckrate1}
 \end{figure}
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.40]{bilder/leckratefit2.png}
+  \includegraphics[width=14cm]{bilder/leckratefit2.png}
   \caption{Leckrate Drehschieberpumpe 2.}
   \label{leckrate2}
 \end{figure}
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.42]{bilder/leckratefit3.png}
+  \includegraphics[width=14cm]{bilder/leckratefit3.png}
   \caption{Leckrate Drehschieberpumpe 3.}
   \label{leckrate3}
 \end{figure}
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.38]{bilder/leckratefit4.png}
+  \includegraphics[width=14cm]{bilder/leckratefit4.png}
   \caption{Leckrate Drehschieberpumpe 4.}
   \label{leckrate4}
 \end{figure}
+Auch hierfür wurde eine lineare Ausgleichsrechnung der Form
+\begin{equation}
+	h(x)=mx+b
+\end{equation}
+durchgeführt.
+Aus den Zusammenhängen $\ref{eq:leckrate1}$ und $\ref{eq:leckrate2}$ und dem Steigungsparameter $m$ wird mit $S=\frac{V}{p_G}m$
+das Saugvermögen $S$ berechnet.\\
+
+Abbildung $\ref{leckrate1}$:
+	\begin{align*}
+		p_G=& (5,0 \pm \, 0,5)\cdot 10^{-5} \, \si{mbar}\\
+		m_1=& (5,48 \pm 0,22)\cdot 10^{-5} \, \si{mbar/s}\\
+		b_1=& (6,80 \pm 1,48)\cdot 10^{-5} \, \si{mbar}\\
+		S_1=& \SI{11,0 \pm 1,5}{1/s}
+	\end{align*}
+	Abbildung $\ref{leckrate2}$:
+		\begin{align*}
+			p_G=& (10 \pm \, 1)\cdot 10^{-5} \, \si{mbar}\\
+			m_2=& (1,78 \pm 0,03)\cdot 10^{-4} \, \si{mbar/s}\\
+			b_2=& (1,04 \pm 0,14)\cdot 10^{-4} \, \si{mbar}\\
+			S_2=& \SI{17,8 \pm 2,3}{1/s}
+		\end{align*}
+		Abbildung $\ref{leckrate3}$:
+			\begin{align*}
+				p_G=& (1,5 \pm \, 0,2)\cdot 10^{-4} \, \si{mbar}\\
+				m_3=& (3,36 \pm 0,09)\cdot 10^{-4} \, \si{mbar/s}\\
+				b_3=& (7,87 \pm 7,30)\cdot 10^{-5} \, \si{mbar}\\
+				S_3=& \SI{22,4 \pm 3,5}{1/s}
+			\end{align*}
+		Abbildung $\ref{leckrate4}$:
+			\begin{align*}
+				p_G=& (2,0 \pm \, 0,2)\cdot 10^{-4} \, \si{mbar}\\
+				m_4=& (4,36 \pm \, 0,12)\cdot 10^{-4} \, \si{mbar/s}\\
+				b_4=& (5,60 \pm \, 1,13)\cdot 10^{-4} \, \si{mbar}\\
+				S_4=& \SI{21,8 \pm 2,9}{1/s}
+			\end{align*}
 
 \subsection{Drehschieberpumpe}
 Ebenso für die Drehschieberpumpe folgt die Auswertung mit anschließendem Vergleich mit der
@@ -248,13 +287,13 @@ Es folgt die graphische Darstellung der logarithmierten Werte aus Tabelle $\ref{
 
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.28]{bilder/drehexpo.png}
+  \includegraphics[width=14cm]{bilder/drehexpo.png}
   \caption{Expo Evakuierungskurve Drehschieberpumpe.}
   \label{expoevakuierungdreh}
 \end{figure}
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.28]{bilder/evakuierung Dreh.png}
+  \includegraphics[width=14cm]{bilder/evakuierung Dreh.png}
   \caption{Evakuierungskurve Drehschieberpumpe.}
   \label{evakuierungdreh}
 \end{figure}
@@ -285,7 +324,8 @@ Bereich 3: $\SI{0,6}{mbar} \geq p \geq \SI{0,06}{mbar}$\\
 \end{align*}
 
 \subsubsection{Leckratenmessung}
-
+Ebenso wie für die Turbopumpe auch, folgen zunächst die Messwerttabellen für die Leckratenmessung
+unter den unterschiedlichen Gleichgewichtsdrücken $\ref{tab:leck_Dreh1}$, $\ref{tab:leck_Dreh2}$, $\ref{tab:leck_Dreh3}$ und $\ref{tab:leck_Dreh4}$.
 \begin{table}[H]
 \centering
 \label{tab:leck_Dreh1}
@@ -349,28 +389,58 @@ $0,60 \pm \, 0,06$ &   95,86 &  92,23 &  94,75 & $(94,28 \pm 0,88) $\\
 \end{tabular}
 \caption{Gleichgewichtsdruck bei $p_G=(0,10 \pm \, 0,01) \, \si{mbar}$}
 \end{table}
-
+Anschließend lässt sich die graphische Darstellung in den Abbildungen $\ref{leckdreh1}$, $\ref{leckdreh2}$, $\ref{leckdreh3}$ und $\ref{leckdreh4}$.
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.43]{bilder/leckdrehfit1.png}
+  \includegraphics[width=14cm]{bilder/leckdrehfit1.png}
   \caption{Leckrate Drehschieberpumpe 1.}
   \label{leckdreh1}
 \end{figure}
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.33]{bilder/leckdrehfit2.png}
+  \includegraphics[width=14cm]{bilder/leckdrehfit2.png}
   \caption{Leckrate Drehschieberpumpe 2.}
   \label{leckdreh2}
 \end{figure}
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.36]{bilder/leckdrehfit3.png}
+  \includegraphics[width=14cm]{bilder/leckdrehfit3.png}
   \caption{Leckrate Drehschieberpumpe 3.}
   \label{leckdreh3}
 \end{figure}
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.36]{bilder/leckdrehfit4.png}
+  \includegraphics[width=14cm]{bilder/leckdrehfit4.png}
   \caption{Leckrate Drehschieberpumpe 4.}
   \label{leckdreh4}
 \end{figure}
+Die Regressionsgeraden besitzen dieselbe lineare Form wie bei der Leckratenmesung der Turbopumpe auch und so lässt sich ebenso das Saugvermögen
+aus dem Steigungsparameter $m$ und dem Volumen $V$ mit $S=\frac{V}{p_G}m$ unter den verschiedenen Gleichgewichtsdrücken $p_G$ berechnen.\\
+Abbildung $\ref{leckdreh1}$:
+	\begin{align*}
+		p_G=& (1,0 \pm \, 0,1)  \, \si{mbar}\\
+		m_1=& (0,12 \pm 0,00) \, \si{mbar/s}\\
+		b_1=& (1,11 \pm 0,12) \, \si{mbar}\\
+		S_1=& \SI{1,31 \pm 0,16}{1/s}
+	\end{align*}
+	Abbildung $\ref{leckdreh2}$:
+		\begin{align*}
+			p_G=& (0,80 \pm \, 0,08) \, \si{mbar}\\
+			m_2=& (0,10 \pm 0,00) \, \si{mbar/s}\\
+			b_2=& (0,77 \pm 0,04) \, \si{mbar}\\
+			S_2=& \SI{1,36 \pm 0,17}{1/s}
+		\end{align*}
+		Abbildung $\ref{leckdreh3}$:
+			\begin{align*}
+				p_G=& (0,40 \pm \, 0,04) \, \si{mbar}\\
+				m_3=& (0,04 \pm 0,00)\, \si{mbar/s}\\
+				b_3=& (0,31 \pm 0,08) \, \si{mbar}\\
+				S_3=& \SI{1,09 \pm 0,14}{1/s}
+			\end{align*}
+		Abbildung $\ref{leckdreh4}$:
+			\begin{align*}
+				p_G=& (0,10 \pm \, 0,01) \, \si{mbar}\\
+				m_4=& (0,01 \pm \, 0,00) \, \si{mbar/s}\\
+				b_4=& (0,15 \pm \, 0,02) \, \si{mbar}\\
+				S_4=& \SI{1,09 \pm 0,14}{1/s}
+			\end{align*}
