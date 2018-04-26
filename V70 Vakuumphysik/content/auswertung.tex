@@ -83,6 +83,20 @@ $(1,6 \pm \, 0,2)\cdot 10^{-5}$ & - & - &  -& -& -& -& -& -& -& - \\
 \caption{Messwerte für die Evakuierungskurve der Turbomolekularpumpe.}
 \end{table}
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.27]{bilder/turbo exponential.png}
+  \caption{Exponentielle Evakuierungskurve Turbomolekularpumpe 3.}
+  \label{turboexponential}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.42]{bilder/turbodruck plot.png}
+  \caption{Linearer Plot Evakuierungskurve Turbomolekularpumpe.}
+  \label{turboplot}
+\end{figure}
+
 \subsubsection{Leckratenmessung}
 \begin{table}[H]
 \centering
@@ -98,7 +112,7 @@ $(8,0 \pm \, 0,8)\cdot 10^{-4}$ &   13,05 &  13,14 &  14,02 & $13,40 \pm 0,25 $\
 $(2,0 \pm \, 0,2)\cdot 10^{-3}$ &   34,01 &  34,50 &  36,37 & $35,96 \pm 0,59 $\\
 $(4,0 \pm \, 0,4)\cdot 10^{-3}$ &  61,18 & 62,18 & 66,18 & $63,18 \pm 1,25 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck bei $(5,0 \pm \, 0,5)\cdot 10^{-5} \, \si{mbar}$}
+\caption{Gleichgewichtsdruck bei $p_G=(5,0 \pm \, 0,5)\cdot 10^{-5} \, \si{mbar}$}
 \end{table}
 
 \begin{table}[H]
@@ -115,7 +129,7 @@ $(2,0 \pm \, 0,2)\cdot 10^{-3}$ &   10,88 &  10,78 &  11,30 & $11,00 \pm 0,13 $\
 $(4,0 \pm \, 0,4)\cdot 10^{-3}$ &   20,09 &  20,00 &  19,61 & $19,90 \pm 0,12 $\\
 $(6,0 \pm \, 0,6)\cdot 10^{-3}$ &  28,26 & 27,78 & 27,36 & $27,80 \pm 0,21 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck bei $(10 \pm \, 1)\cdot 10^{-5} \, \si{mbar}$}
+\caption{Gleichgewichtsdruck bei $p_G=(10 \pm \, 1)\cdot 10^{-5} \, \si{mbar}$}
 \end{table}
 
 \begin{table}[H]
@@ -132,7 +146,7 @@ $(2,0 \pm \, 0,2)\cdot 10^{-3}$ &   6,70 &  6,31 &  6,22 & $6,41 \pm 0,12 $\\
 $(4,0 \pm \, 0,4)\cdot 10^{-3}$ &   12,30 &  11,94 &  11,89 & $12,04 \pm 0,11 $\\
 $(6,0 \pm \, 0,6)\cdot 10^{-3}$ &  17,37 & 17,31 & 17,10 & $17,26 \pm 0,07 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck bei $(1,5 \pm \, 0,2)\cdot 10^{-4} \, \si{mbar}$}
+\caption{Gleichgewichtsdruck bei $p_G=(1,5 \pm \, 0,2)\cdot 10^{-4} \, \si{mbar}$}
 \end{table}
 
 \begin{table}[H]
@@ -149,14 +163,39 @@ $(4,0 \pm \, 0,4)\cdot 10^{-3}$ &   9,57 &  9,77 &  9,71 & $9,68 \pm 0,05 $\\
 $(6,0 \pm \, 0,6)\cdot 10^{-3}$ &   13,67 &  13,94 &  13,78 & $13,80 \pm 0,06 $\\
 $(8,0 \pm \, 0,8)\cdot 10^{-3}$ &  17,50 & 17,87 & 17,59 & $17,65 \pm 0,09 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck bei $(2,0 \pm \, 0,2)\cdot 10^{-4} \, \si{mbar}$}
+\caption{Gleichgewichtsdruck bei $p_G=(2,0 \pm \, 0,2)\cdot 10^{-4} \, \si{mbar}$}
 \end{table}
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.36]{bilder/leckratefit1.png}
+  \caption{Leckrate Drehschieberpumpe 1.}
+  \label{leckrate1}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.40]{bilder/leckratefit2.png}
+  \caption{Leckrate Drehschieberpumpe 2.}
+  \label{leckrate2}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.42]{bilder/leckratefit3.png}
+  \caption{Leckrate Drehschieberpumpe 3.}
+  \label{leckrate3}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.38]{bilder/leckratefit4.png}
+  \caption{Leckrate Drehschieberpumpe 4.}
+  \label{leckrate4}
+\end{figure}
 
 \subsection{Drehschieberpumpe}
 Ebenso für die Drehschieberpumpe folgt die Auswertung mit anschließendem Vergleich mit der
 Herstellerangabe:\\
-Drehschieber Pfeiffer Duo 004A mit einem Saugvermögen von $\SI{1,1}{l/s}$
+Drehschieber Pfeiffer Duo 004A mit einem Saugvermögen von $\SI{1,1}{l/s}$\\
+Die folgende Tabelle zeigt die Messwerte zur Bestimmung der Evakuierungskurve.
 \subsubsection{Evakuierungsmessung}
 \begin{table}[H]
 \centering
@@ -172,8 +211,8 @@ $(6 \pm \, 1,8)$ & -(5,1 \pm \, 0,4) & 54,99 & 46,42 & 54,25 & 54,31 & 54,18 & $
 $(4 \pm \, 1,2)$ & -(5,5 \pm \, 0,4) & 59,42 & 50,29 & 57,74 & 57,65 & 58,36 & $56,69 \pm \, 1,46$\\
 $(2 \pm \, 0,6)$ & -(6,2 \pm \, 0,4) & 65,83 & 57,38 & 64,60 & 64,50 & 64,79 & $63,42 \pm \, 1,37$\\
 $(1 \pm \, 0,3)$ & -(6,9 \pm \, 0,4) & 73,00 & 64,02 & 71,62 & 69,82 & 71,97 & $70,09 \pm \, 1,43$\\
-$(0,6 \pm \, 0,18)$ & -(7,5 \pm \, 0,4) & 79,54 & 70,73 & 77,92 & 77,80 & 78,18 & $76,8 \pm \, 1,4$\\
-$(0,4 \pm \, 0,12)$ & -(7,9 \pm \, 0,4) & 86,35 & 77,33 & 85,30 & 85,24 & 85,19 & $83,9 \pm \, 1,5$\\
+$(0,6 \pm \, 0,18)$ & -(7,5 \pm \, 0,4) & 79,54 & 70,73 & 77,92 & 77,80 & 78,18 & $76,8 \pm \, 1,43$\\
+$(0,4 \pm \, 0,12)$ & -(7,9 \pm \, 0,4) & 86,35 & 77,33 & 85,30 & 85,24 & 85,19 & $83,9 \pm \, 1,54$\\
 $(0,2 \pm \, 0,06)$ & -(8,7 \pm \, 0,5) & 99,69 & 90,02 & 98,98 & 98,17 & 98,83 & $97,14 \pm \, 1,61$\\
 $(0,1 \pm \, 0,03)$ & -(9,7 \pm \, 0,6) & 111,79 & 101,65 & 110,30 & 111,17 & 111,87 & $109,36 \pm \, 1,74$\\
 $(0,06 \pm \, 0,02)$ & -(10,8 \pm \, 1,2) & 125,13 & 113,88 & 128,72 & 129,62 & 130,60 & $125,59 \pm \, 2,75$\\
@@ -181,6 +220,18 @@ $(0,04 \pm \, 0,01)$ & - & - & - & - & - & - & -
 \end{tabular}
 \caption{Messwerte für die Evakuierungskurve der Drehschieberpumpe.}
 \end{table}
+
+
+
+Je nach Druckbereich, wird der Graph unterteilt und gesonderte lineare Fits erstellt.
+Es folgt die graphische Darstellung der logarithmierten Werte aus Tabelle $\ref{tab:EvakuierungskurveDreh}$.
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.28]{bilder/evakuierung Dreh.png}
+  \caption{Evakuierungskurve Drehschieberpumpe.}
+  \label{evakuierungdreh}
+\end{figure}
+
 \subsubsection{Leckratenmessung}
 
 \begin{table}[H]
@@ -196,7 +247,7 @@ $6,0 \pm \, 0,6$ &   40,78 &  38,00 &  39,19 & $39,32 \pm 0,66 $\\
 $10,0 \pm \, 0,1$ &   73,05 &  70,53 &  71,96 & $71,85 \pm 0,60 $\\
 $20,0 \pm \, 0,2$ &   172,71 &  148,99 &  155,35 & $159,02 \pm 5,79 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck bei $(1,0 \pm \, 0,1)  \, \si{mbar}$}
+\caption{Gleichgewichtsdruck bei $p_G=(1,0 \pm \, 0,1)  \, \si{mbar}$}
 \end{table}
 
 \begin{table}[H]
@@ -212,7 +263,7 @@ $4,0 \pm \, 0,4$ &   32,99 &  31,52 &  32,01 & $32,17 \pm 0,35 $\\
 $6,0 \pm \, 0,6$  &   50,15 &  50,65 &  49,51 & $50,10 \pm 0,27 $\\
 $10,0 \pm \, 0,1$ &   88,14 &  90,21 &  90,73 & $89,69 \pm 0,65 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck bei $(0,80 \pm \, 0,08) \, \si{mbar}$}
+\caption{Gleichgewichtsdruck bei $p_G=(0,80 \pm \, 0,08) \, \si{mbar}$}
 \end{table}
 
 \begin{table}[H]
@@ -228,7 +279,7 @@ $2,0 \pm \, 0,2$ &   45,09 &  43,40 &  44,21 & $44,23 \pm 0,40 $\\
 $4,0 \pm \, 0,4$ &   93,98 &  90,09 & 90,21 & $91,43 \pm 1,04 $\\
 $6,0 \pm \, 0,6$ &   132,43 &  131,15 &  133,37 & $132,32 \pm 0,53 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck bei $(0,40 \pm \, 0,04) \, \si{mbar}$}
+\caption{Gleichgewichtsdruck bei $p_G=(0,40 \pm \, 0,04) \, \si{mbar}$}
 \end{table}
 
 \begin{table}[H]
@@ -244,5 +295,30 @@ $0,30 \pm \, 0,03$ &   18,89 &  21,62 &  19,79 & $(20,10 \pm 0,66) $\\
 $0,40 \pm \, 0,04$ &   45,77 &  46,39 & 43,27 & $(45,14 \pm 0,78) $\\
 $0,60 \pm \, 0,06$ &   95,86 &  92,23 &  94,75 & $(94,28 \pm 0,88) $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck bei $(0,10 \pm \, 0,01) \, \si{mbar}$}
+\caption{Gleichgewichtsdruck bei $p_G=(0,10 \pm \, 0,01) \, \si{mbar}$}
 \end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.43]{bilder/leckdrehfit1.png}
+  \caption{Leckrate Drehschieberpumpe 1.}
+  \label{leckdreh1}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.33]{bilder/leckdrehfit2.png}
+  \caption{Leckrate Drehschieberpumpe 2.}
+  \label{leckdreh2}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.36]{bilder/leckdrehfit3.png}
+  \caption{Leckrate Drehschieberpumpe 3.}
+  \label{leckdreh3}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.36]{bilder/leckdrehfit4.png}
+  \caption{Leckrate Drehschieberpumpe 4.}
+  \label{leckdreh4}
+\end{figure}
