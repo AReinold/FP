@@ -22,6 +22,11 @@ Für die Fehlerfortpflanzung einer Variablen $x_i$ gilt
 	\sigma = \sqrt{\sum_{i}^N \Bigl(\frac{\partial f}{\partial x_i} \sigma_{x_i}\Bigr)^2}.
 	\label{eq:gaussfehler}
 \end{equation}
+Für die Berechnung des Logarithmus für die Evakuierungsmessung muss der Fehler dessen aus bereits fehlerbehafteten Größen nach
+\begin{equation}
+	\sigma = \sqrt{\frac{\sigma_p^2}{(p-p_E)^2}+\frac{\sigma_{p0}^2}{(p_0-p_E)^2}+\sigma_{p_E}^2\bigl(\frac{1}{p_0-p_E}-\frac{1}{p_-p_E}\bigr)^2}
+\end{equation}
+berechnet werden.
 \subsection{Bestimmung des Volumens}
 Für die folgende Auswertung ist es unumgänglich, das Volumen des Messaufbaus zu bestimmen.
 Tabelle $\ref{tab:Bauteile}$ zeigt, aufgelistet nach Pumpen- und Messart die verwendeten Bauteile und ihre Volumina.
@@ -98,7 +103,7 @@ $(1,6 \pm \, 0,2)\cdot 10^{-5}$ & - & - &  -& -& -& -& -& -& -& - \\
   \label{turboplot}
 \end{figure}
 Abbildung $\ref{turboexponential}$ zeigt die Messwerte aus Tabelle $\ref{tab:EvakuierungskurveTurbo}$ aufgetragen.
-Es zeigt sich ein exonentieller Zusammenhang.
+Es zeigt sich ein exponentieller Zusammenhang.
 In der logarithmischen Darstellung (Abbildung $\ref{turboplot}$) wurden die Messwerte unterteilt und zwei lineare Ausgleichsrechnungen durchgeführt, da für die unterschiedlichen Druckbereiche das Saugvermögen nicht konstant ist.
 Die Ausgleichsgeraden haben die Form
 \begin{equation}
@@ -115,7 +120,7 @@ Bereich 1: $8 \cdot 10^{-3} \, \si{mbar} \geq p \geq 6 \cdot 10^{-4} \, \si{mbar
 Bereich 2: $6 \cdot 10^{-4} \, \si{mbar} \geq p \geq 3 \cdot 10^{-5} \, \si{mbar}$\\
 \begin{align*}
 	m_2=& -\SI{0,52 \pm 0,09}{1/s}\\
-	b_2=& -\si{0,1,45 \pm 0,66}\\
+	b_2=& -\si{1,45 \pm 0,66}\\
 	S_2=& \SI{5,2 \pm 1,0}{l/s}
 \end{align*}
 
@@ -135,7 +140,7 @@ $(8,0 \pm \, 0,8)\cdot 10^{-4}$ &   13,05 &  13,14 &  14,02 & $13,40 \pm 0,25 $\
 $(2,0 \pm \, 0,2)\cdot 10^{-3}$ &   34,01 &  34,50 &  36,37 & $35,96 \pm 0,59 $\\
 $(4,0 \pm \, 0,4)\cdot 10^{-3}$ &  61,18 & 62,18 & 66,18 & $63,18 \pm 1,25 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck bei $p_G=(5,0 \pm \, 0,5)\cdot 10^{-5} \, \si{mbar}$}
+\caption{Gleichgewichtsdruck bei $p_G=(5,0 \pm \, 0,5)\cdot 10^{-5} \, \si{mbar}$.}
 \label{tab:leck_Turbo1}
 \end{table}
 
@@ -152,7 +157,7 @@ $(2,0 \pm \, 0,2)\cdot 10^{-3}$ &   10,88 &  10,78 &  11,30 & $11,00 \pm 0,13 $\
 $(4,0 \pm \, 0,4)\cdot 10^{-3}$ &   20,09 &  20,00 &  19,61 & $19,90 \pm 0,12 $\\
 $(6,0 \pm \, 0,6)\cdot 10^{-3}$ &  28,26 & 27,78 & 27,36 & $27,80 \pm 0,21 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck bei $p_G=(1,0 \pm \, 0,1)\cdot 10^{-5} \, \si{mbar}$}
+\caption{Gleichgewichtsdruck bei $p_G=(1,0 \pm \, 0,1)\cdot 10^{-5} \, \si{mbar}$.}
 \label{tab:leck_Turbo2}
 \end{table}
 
@@ -169,7 +174,7 @@ $(2,0 \pm \, 0,2)\cdot 10^{-3}$ &   6,70 &  6,31 &  6,22 & $6,41 \pm 0,12 $\\
 $(4,0 \pm \, 0,4)\cdot 10^{-3}$ &   12,30 &  11,94 &  11,89 & $12,04 \pm 0,11 $\\
 $(6,0 \pm \, 0,6)\cdot 10^{-3}$ &  17,37 & 17,31 & 17,10 & $17,26 \pm 0,07 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck bei $p_G=(1,5 \pm \, 0,2)\cdot 10^{-4} \, \si{mbar}$}
+\caption{Gleichgewichtsdruck bei $p_G=(1,5 \pm \, 0,2)\cdot 10^{-4} \, \si{mbar}$.}
 \label{tab:leck_Turbo3}
 \end{table}
 
@@ -186,7 +191,7 @@ $(4,0 \pm \, 0,4)\cdot 10^{-3}$ &   9,57 &  9,77 &  9,71 & $9,68 \pm 0,05 $\\
 $(6,0 \pm \, 0,6)\cdot 10^{-3}$ &   13,67 &  13,94 &  13,78 & $13,80 \pm 0,06 $\\
 $(8,0 \pm \, 0,8)\cdot 10^{-3}$ &  17,50 & 17,87 & 17,59 & $17,65 \pm 0,09 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck bei $p_G=(2,0 \pm \, 0,2)\cdot 10^{-4} \, \si{mbar}$}
+\caption{Gleichgewichtsdruck bei $p_G=(2,0 \pm \, 0,2)\cdot 10^{-4} \, \si{mbar}$.}
 \label{tab:leck_Turbo4}
 \end{table}
 Die Daten aus den vorheringen Tabellen sind in den Abbildungen $\ref{leckrate1}$, $\ref{leckrate2}$, $\ref{leckrate3}$ und $\ref{leckrate4}$ graphisch dargestellt.
@@ -254,7 +259,7 @@ Abbildung $\ref{leckrate1}$:
 \subsection{Drehschieberpumpe}
 Ebenso für die Drehschieberpumpe folgt die Auswertung mit anschließendem Vergleich mit der
 Herstellerangabe\cite{anleitung}:\\
-Drehschieber Pfeiffer Duo 004A mit einem Saugvermögen von $\SI{1,1}{l/s}$\\
+Drehschieber Pfeiffer Duo 004A mit einem Saugvermögen von $\SI{1,1}{l/s}$\newpage
 Die folgende Tabelle zeigt die Messwerte zur Bestimmung der Evakuierungskurve.
 \subsubsection{Evakuierungsmessung}
 \begin{table}[H]
@@ -304,7 +309,7 @@ Für die drei Bereiche wurden lineare Ausgleichsgeraden der Form
 	h(x)=mx+b
 \end{equation}
 erstellt.\\
-Durch die Regressionsberechnung ergeben sich folgende Parameter für die drei Bereiche und das daraus durch $S=-mV$ errechnete Saugvermögen:\\\vspace{1cm}
+Durch die Regressionsberechnung ergeben sich folgende Parameter für die drei Bereiche und das daraus durch $S=-mV$ errechnete Saugvermögen:\\
 Bereich 1: $\SI{1000}{mbar} \geq p \geq \SI{10}{mbar}$\\
 \begin{align*}
 	m_1=& -\SI{0,11 \pm 0,02}{1/s}\\
@@ -339,7 +344,7 @@ $6,0 \pm \, 0,6$ &   40,78 &  38,00 &  39,19 & $39,32 \pm 0,66 $\\
 $10,0 \pm \, 0,1$ &   73,05 &  70,53 &  71,96 & $71,85 \pm 0,60 $\\
 $20,0 \pm \, 0,2$ &   172,71 &  148,99 &  155,35 & $159,02 \pm 5,79 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck bei $p_G=(1,0 \pm \, 0,1)  \, \si{mbar}$}
+\caption{Gleichgewichtsdruck bei $p_G=(1,0 \pm \, 0,1)  \, \si{mbar}$.}
 \label{tab:leck_Dreh1}
 \end{table}
 
@@ -355,7 +360,7 @@ $4,0 \pm \, 0,4$ &   32,99 &  31,52 &  32,01 & $32,17 \pm 0,35 $\\
 $6,0 \pm \, 0,6$  &   50,15 &  50,65 &  49,51 & $50,10 \pm 0,27 $\\
 $10,0 \pm \, 0,1$ &   88,14 &  90,21 &  90,73 & $89,69 \pm 0,65 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck bei $p_G=(0,80 \pm \, 0,08) \, \si{mbar}$}
+\caption{Gleichgewichtsdruck bei $p_G=(0,80 \pm \, 0,08) \, \si{mbar}$.}
 \label{tab:leck_Dreh2}
 \end{table}
 
@@ -371,7 +376,7 @@ $2,0 \pm \, 0,2$ &   45,09 &  43,40 &  44,21 & $44,23 \pm 0,40 $\\
 $4,0 \pm \, 0,4$ &   93,98 &  90,09 & 90,21 & $91,43 \pm 1,04 $\\
 $6,0 \pm \, 0,6$ &   132,43 &  131,15 &  133,37 & $132,32 \pm 0,53 $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck bei $p_G=(0,40 \pm \, 0,04) \, \si{mbar}$}
+\caption{Gleichgewichtsdruck bei $p_G=(0,40 \pm \, 0,04) \, \si{mbar}$.}
 \label{tab:leck_Dreh3}
 \end{table}
 
@@ -387,7 +392,7 @@ $0,30 \pm \, 0,03$ &   18,89 &  21,62 &  19,79 & $(20,10 \pm 0,66) $\\
 $0,40 \pm \, 0,04$ &   45,77 &  46,39 & 43,27 & $(45,14 \pm 0,78) $\\
 $0,60 \pm \, 0,06$ &   95,86 &  92,23 &  94,75 & $(94,28 \pm 0,88) $\\
 \end{tabular}
-\caption{Gleichgewichtsdruck bei $p_G=(0,10 \pm \, 0,01) \, \si{mbar}$}
+\caption{Gleichgewichtsdruck bei $p_G=(0,10 \pm \, 0,01) \, \si{mbar}$.}
 \label{tab:leck_Dreh4}
 \end{table}
 Anschließend lassen sich die graphischen Darstellungen in den Abbildungen $\ref{leckdreh1}$, $\ref{leckdreh2}$, $\ref{leckdreh3}$ und $\ref{leckdreh4}$ finden.
@@ -415,7 +420,7 @@ Anschließend lassen sich die graphischen Darstellungen in den Abbildungen $\ref
 	\caption{Graphische Darstellung der Leckratenmessung der Drehschieberpumpe für $p_G=(0,10 \pm \, 0,01) \, \si{mbar}$.}
   \label{leckdreh4}
 \end{figure}
-Die Regressionsgeraden besitzen dieselbe lineare Form wie bei der Leckratenmesung der Turbopumpe auch und so lässt sich ebenso das Saugvermögen
+Die Regressionsgeraden besitzen dieselbe lineare Form wie bei der Leckratenmessung der Turbopumpe auch und so lässt sich ebenso das Saugvermögen
 aus dem Steigungsparameter $m$ und dem Volumen $V$ mit $S=\frac{V}{p_G}m$ unter den verschiedenen Gleichgewichtsdrücken $p_G$ berechnen.\\
 Abbildung $\ref{leckdreh1}$:
 	\begin{align*}
