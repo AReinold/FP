@@ -54,15 +54,15 @@ mit der Drehschieberpumpe DL und mit der Turbopumpe TL unterschieden.\newline
 Die Teilvolumina der jeweiligen Aufbauten werden addiert und im Folgenden angegeben. Die Fehlerberechnung erfolgt mit Formel $\ref{eq:gaussfehler}$.
 Es ergeben sich
 \begin{align*}
-   V_\text{TE}=\SI{10,0 \pm 0,8}{l}\\
-   V_\text{TL}=\SI{10,0 \pm 0,8}{l}\\
-   V_\text{DE}=\SI{10,9 \pm 0,8}{l}\\
-   V_\text{DL}=\SI{10,9 \pm 0,8}{l}.
+   V_\text{TE}=&\SI{10,0 \pm 0,8}{l}\\
+   V_\text{TL}=&\SI{10,0 \pm 0,8}{l}\\
+   V_\text{DE}=&\SI{10,9 \pm 0,8}{l}\\
+   V_\text{DL}=&\SI{10,9 \pm 0,8}{l}.
 \end{align*}
 
 \subsection{Turbomolekularpumpe}
 Für die Turbomolekularpumpe werden im Folgenden beide Messverfahren ausgewertet.
-Zum anschließenden Vergleich sind folgende Herstellerangaben gegeben:\\
+Zum anschließenden Vergleich sind folgende Herstellerangaben\cite{anleitung} gegeben:\\
 Turbo SST81 der Firma ILMAC mit einem Saugvermögen von $\SI{77}{l/s}$
 \subsubsection{Evakuierungsmessung}
 \begin{table}[H]
@@ -87,17 +87,17 @@ $(1,6 \pm \, 0,2)\cdot 10^{-5}$ & - & - &  -& -& -& -& -& -& -& - \\
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{bilder/the final final plot.png}
-  \caption{Exponentielle Evakuierungskurve Turbomolekularpumpe 3.}
+  \caption{Exponentielle Darstellung der Evakuierungskurve der Turbomolekularpumpe.}
   \label{turboexponential}
 \end{figure}
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{bilder/turbodruck plot.png}
-  \caption{Linearer Plot Evakuierungskurve Turbomolekularpumpe.}
+  \caption{Logarithmische Darstellung der Evakuierungskurve der Turbomolekularpumpe.}
   \label{turboplot}
 \end{figure}
-Abbildung $\ref{turboecponential}$ zeigt die Messwerte aus Tabelle $\ref{tab:EvakuierungskurveTurbo}$ aufgetragen.
+Abbildung $\ref{turboexponential}$ zeigt die Messwerte aus Tabelle $\ref{tab:EvakuierungskurveTurbo}$ aufgetragen.
 Es zeigt sich ein exonentieller Zusammenhang.
 In der logarithmischen Darstellung (Abbildung $\ref{turboplot}$) wurden die Messwerte unterteilt und zwei lineare Ausgleichsrechnungen durchgeführt, da für die unterschiedlichen Druckbereiche das Saugvermögen nicht konstant ist.
 Die Ausgleichsgeraden haben die Form
@@ -106,13 +106,13 @@ Die Ausgleichsgeraden haben die Form
 \end{equation}
 Aus den Regressionsparametern wird das Saugvermögen durch $S=-mV$ bestimmt.\\
 
-Bereich 1: $8 \cdot 10^{-3} \, \si{mbar} \geq b \geq 6 \cdot 10^{-4} \, \si{mbar}$\\
+Bereich 1: $8 \cdot 10^{-3} \, \si{mbar} \geq p \geq 6 \cdot 10^{-4} \, \si{mbar}$\\
 \begin{align*}
 	m_1=& -\SI{0,91 \pm 0,09}{1/s}\\
 	b_1=& \si{0,18 \pm 0,16}\\
 	S_1=& \SI{9,1 \pm 1,2}{l/s}
 \end{align*}
-Bereich 2: $6 \cdot 10^{-4} \, \si{mbar} \geq b \geq 3 \cdot 10^{-5} \, \si{mbar}$\\
+Bereich 2: $6 \cdot 10^{-4} \, \si{mbar} \geq p \geq 3 \cdot 10^{-5} \, \si{mbar}$\\
 \begin{align*}
 	m_2=& -\SI{0,52 \pm 0,09}{1/s}\\
 	b_2=& -\si{0,1,45 \pm 0,66}\\
@@ -193,25 +193,25 @@ Die Daten aus den vorheringen Tabellen sind in den Abbildungen $\ref{leckrate1}$
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{bilder/leckratefit1.png}
-  \caption{Leckrate Drehschieberpumpe 1.}
+  \caption{Graphische Darstellung der Leckratenmessung der Turbomolekularpumpe für $p_G=(5,0 \pm \, 0,5)\cdot 10^{-5} \, \si{mbar}$.}
   \label{leckrate1}
 \end{figure}
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{bilder/leckratefit2.png}
-  \caption{Leckrate Drehschieberpumpe 2.}
+	\caption{Graphische Darstellung der Leckratenmessung der Turbomolekularpumpe für $p_G=(1,0 \pm \, 0,1)\cdot 10^{-5} \, \si{mbar}$.}
   \label{leckrate2}
 \end{figure}
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{bilder/leckratefit3.png}
-  \caption{Leckrate Drehschieberpumpe 3.}
+	\caption{Graphische Darstellung der Leckratenmessung der Turbomolekularpumpe für $p_G=(1,5 \pm \, 0,2)\cdot 10^{-4} \, \si{mbar}$.}
   \label{leckrate3}
 \end{figure}
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{bilder/leckratefit4.png}
-  \caption{Leckrate Drehschieberpumpe 4.}
+	\caption{Graphische Darstellung der Leckratenmessung der Turbomolekularpumpe für $p_G=(2,0 \pm \, 0,2)\cdot 10^{-4} \, \si{mbar}$.}
   \label{leckrate4}
 \end{figure}
 Auch hierfür wurde eine lineare Ausgleichsrechnung der Form
@@ -253,7 +253,7 @@ Abbildung $\ref{leckrate1}$:
 
 \subsection{Drehschieberpumpe}
 Ebenso für die Drehschieberpumpe folgt die Auswertung mit anschließendem Vergleich mit der
-Herstellerangabe:\\
+Herstellerangabe\cite{anleitung}:\\
 Drehschieber Pfeiffer Duo 004A mit einem Saugvermögen von $\SI{1,1}{l/s}$\\
 Die folgende Tabelle zeigt die Messwerte zur Bestimmung der Evakuierungskurve.
 \subsubsection{Evakuierungsmessung}
@@ -289,13 +289,13 @@ Es folgt die graphische Darstellung der logarithmierten Werte aus Tabelle $\ref{
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{bilder/drehexpo.png}
-  \caption{Expo Evakuierungskurve Drehschieberpumpe.}
+  \caption{Exponentielle Darstellung der Evakuierungskurve der Drehschieberpumpe.}
   \label{expoevakuierungdreh}
 \end{figure}
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{bilder/evakuierung Dreh.png}
-  \caption{Evakuierungskurve Drehschieberpumpe.}
+  \caption{Logarithmische Darstellung der Evakuierungskurve der Drehschieberpumpe.}
   \label{evakuierungdreh}
 \end{figure}
 
@@ -390,29 +390,29 @@ $0,60 \pm \, 0,06$ &   95,86 &  92,23 &  94,75 & $(94,28 \pm 0,88) $\\
 \caption{Gleichgewichtsdruck bei $p_G=(0,10 \pm \, 0,01) \, \si{mbar}$}
 \label{tab:leck_Dreh4}
 \end{table}
-Anschließend lässt sich die graphische Darstellung in den Abbildungen $\ref{leckdreh1}$, $\ref{leckdreh2}$, $\ref{leckdreh3}$ und $\ref{leckdreh4}$.
+Anschließend lassen sich die graphischen Darstellungen in den Abbildungen $\ref{leckdreh1}$, $\ref{leckdreh2}$, $\ref{leckdreh3}$ und $\ref{leckdreh4}$ finden.
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{bilder/leckdrehfit1.png}
-  \caption{Leckrate Drehschieberpumpe 1.}
+	\caption{Graphische Darstellung der Leckratenmessung der Drehschieberpumpe für $p_G=(1,0 \pm \, 0,1)  \, \si{mbar}$.}
   \label{leckdreh1}
 \end{figure}
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{bilder/leckdrehfit2.png}
-  \caption{Leckrate Drehschieberpumpe 2.}
+	\caption{Graphische Darstellung der Leckratenmessung der Drehschieberpumpe für $p_G=(0,80 \pm \, 0,08) \, \si{mbar}$.}
   \label{leckdreh2}
 \end{figure}
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{bilder/leckdrehfit3.png}
-  \caption{Leckrate Drehschieberpumpe 3.}
+	\caption{Graphische Darstellung der Leckratenmessung der Drehschieberpumpe für $p_G=(0,40 \pm \, 0,04) \, \si{mbar}$.}
   \label{leckdreh3}
 \end{figure}
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{bilder/leckdrehfit4.png}
-  \caption{Leckrate Drehschieberpumpe 4.}
+	\caption{Graphische Darstellung der Leckratenmessung der Drehschieberpumpe für $p_G=(0,10 \pm \, 0,01) \, \si{mbar}$.}
   \label{leckdreh4}
 \end{figure}
 Die Regressionsgeraden besitzen dieselbe lineare Form wie bei der Leckratenmesung der Turbopumpe auch und so lässt sich ebenso das Saugvermögen
