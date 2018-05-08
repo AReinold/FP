@@ -54,9 +54,30 @@ Die Veränderung der Ausbreitungsgeschwindigkeit des Lichts beeinflusst den Well
 \begin{equation}
   k = \frac{2\pi}{\lambda_{\text{vac}}}n
 \end{equation}
+Hierbei bezeichnet $\lambda_{\text{vac}}$ die Vakuumwellenlänge.
 Aus diesem Grund erfährt ein Strahl, welcher in ein Medium mit einem veränderten Brechungsindex eintritt, eine Phasenverschiebung gemäß:
 \begin{equation}
-  \delta \phi= \frac{2\pi}{\lambda_{\text{vac}}}(n-1)L \, ,
+  \Delta \phi= \frac{2\pi}{\lambda_{\text{vac}}}(n-1)L \, ,
 \end{equation}
 wobei  $L$ die in dem Medium durchquerte Strecke bezeichnet. Die entstandene Phasenverschiebung, kann beim Sagnac-Interferometer zu Interferenzeffekten führen. Es lässt sich also
-aus der Anzahl der
+aus der Anzahl der gemessen Maxima der Brechungindex ermitteln. Für die Maxima gilt:
+\begin{equation}
+  M = \frac{\Delta \phi}{2 \pi}
+\end{equation}
+Über (7) ist es möglich den Brechungsindex aus der Anzahl der Maxima zu bestimmen:
+\begin{equation}
+  n=\frac{M\lambda_{\text{vac}}}{L}+1
+\end{equation}
+\subsection{Brechungsindexbestimmung von Glas}
+Ähnlich wie bei der Bestimmung des Brechungsindexes von Gasen, wird auch bei Glas die Anzahl der auftretenden Interferenzmaxima genutzt um $n$ zu berechnen. Beim Sagnac-Interferometer
+werden hierbei die beiden entgegengesetzt laufenden Strahlen jeweils durch ein mit dem Winkel $\theta$ geneigtes Glasplättchen geleitet. Beim Durchqueren
+der Glasplättchen treten zwei phasenverschiebende Effekte auf; zum einen wird durch die geometrische Lichtbrechung die Phase verschoben und zum anderen tritt wie beim
+Gas eine Phasenverschiebung durch den Brechungsindex direkt auf.
+Die Anzahl der Interferenzmaxima welche durch diese, kompliziert zu berechnende, Phasenverschiebung auftritt, lässt  sich mit
+\begin{equation}
+  M \approx \frac{2T}{\lambda_{\text{vac}}}\frac{n-1}{2n}\theta^2
+\end{equation}
+annähern. Hierbei bezeichnet $T$ die Dicke der Platten. Somit folgt für den Brechungsindex
+\begin{equation}
+  n=1-\frac{T\theta^2}{M\lambda_{\text{vac}}}
+\end{equation}
