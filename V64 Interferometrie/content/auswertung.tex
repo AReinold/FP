@@ -2,11 +2,19 @@
 Die Auswertung, genauer die Fehlerrechnung, die Plots und Ausgleichsrechnung erfolgt mit den Paketen
 Numpy \cite{numpy}, Uncertainties \cite{uncertainties}, Matplotlib \cite{matplotlib} und Scipy \cite{scipy} in der Programmiersprache python.
 \subsection{Fehlerrechnung}
-
+Der Mittelwert der Brechzahlen wird im Folgenden nach
+\begin{equation}
+  \bar{n}=\frac{1}{a}\sum_{i=1}^{a}n_i
+\end{equation}
+und sein Fehler mit
+\begin{equation}
+  \sigma_{\bar{n}}=\sqrt{\frac{1}{a(a-1)}\sum_{i=1}^{a}(\bar{n}-n_i)^2}
+\end{equation}
+gebildet.
 \subsection{Kontrastmessung}
 Vor Beginn der weiteren Auswertung muss zunächst der maximale Kontrast ermittelt werden.
-Wie in der Durchführung beschrieben, wurde für die Messung vorgegangen und die Ergebnisse befinden sich in Tabelle $\ref{tab:kontrast}$.
-Aus den gemessenen Extrema wurde nach $\ref{eq:kontrast}$ der Kontrast berechnet.
+Wie in der Durchführung beschrieben, wurde für die Messung vorgegangen; die Ergebnisse befinden sich in Tabelle $\ref{tab:kontrast}$.
+Aus den gemessenen Extrema wurde nach Formel $\ref{eq:kontrast}$ der Kontrast berechnet.
 Abbildung $\ref{fig:kontrastplot}$ enthält die graphische Darstellung der Kontrastmesswerte.
 Erwartet wird ein Kontrast
 \begin{equation}
@@ -18,7 +26,7 @@ Infolgedessen wird eine Regression der Form
 \end{equation}
 erstellt. Der Parameter $a$ ergib sich aus der Regression zu
 \begin{equation*}
-  a = 1,71 \pm 0,07
+  a = 1,71 \pm 0,07.
 \end{equation*}
 Aus der Tabelle und dem Graphen ist zu entnehmen, dass die erwarteten Kontrastmaxima bei den erwarteten Stellen $45° , 135° , 225° \, \text{und} \, 315°$ zu finden sind.
 Der Wert bei $\phi = 310°$ liegt dennoch höher als die anderen, sodass für die weiteren Messung mit eben dieser Einstellung weitergearbeitet wurde.
@@ -65,7 +73,7 @@ Der Wert bei $\phi = 310°$ liegt dennoch höher als die anderen, sodass für di
 Durch das Drehen der Glasplatten soll, wie in der Durchführung beschrieben, über die bestimmten Intensitätsmaxima
 der Brechungsindex $n$ berechnet werden.
 Dies erfolgt nach Formel $\ref{eq:glas}$.
-Als vom Hersteller gelieferte Angaben \cite{Anleitung} stehen die Dicke der Glasplättchen $T=\SI{1}{mm}$, der Winkel der Platten zueinander $2\delta=20°$ und ein Theoriewert für
+Als vom Hersteller gelieferte Angaben \cite{anleitung} stehen die Dicke der Glasplättchen $T=\SI{1}{mm}$, der Winkel der Platten zueinander $2\delta=20°$ und ein Theoriewert für
 den Brechungindex $n= 1,45$ zur Verfügung \cite{brechglas}.
 Die Messung erfolgte über ein Intervall von $\theta = 10°$.
 Tabelle $\ref{tab:glas}$ zeigt die Messwerte.
@@ -84,11 +92,11 @@ Tabelle $\ref{tab:glas}$ zeigt die Messwerte.
 \caption{Messwerte zur Bestimmung des Brechungsindexes der Glasplättchen.}
 \label{tab:glas}
 \end{table}
-Der Mittelwert des Brechungindexes folgt zu $\bar{n_\text{Glas}}=1,566 \pm 0,043$.\\
+Der Mittelwert des Brechungindexes folgt zu $\overline{n_\text{Glas}}=1,566 \pm 0,043$.\\
 Es ergibt sich eine Abweichung von $7,4 \%$ zum Theoriewert.
 
 \subsection{Brechnungsindex von Luft}
-Die Berechnung des Brechungsindizes von Luft erfolgte bei einer Umgebungstemperatur von $\SI{23,4}{°C}$ und bei einem Druck von $\SI{994}{mbar}$.
+Die Berechnung des Brechungsindexes von Luft erfolgte bei einer Umgebungstemperatur von $\SI{23,4}{°C}$ und bei einem Druck von $\SI{994}{mbar}$.
 Der Startwert nach der Evakuierung lag bei $\SI{6}{mbar}$.
 Die Länge der Gaskammer beträgt $\SI{0,1}{m}$.
 Der Brechungsindex wird mit Formel $\ref{eq:gas}$ berechnet.
@@ -106,6 +114,6 @@ Der Brechungsindex wird mit Formel $\ref{eq:gas}$ berechnet.
 \caption{Messwerte zur Bestimmung des Brechungsindexes von Luft.}
 \label{tab:luft}
 \end{table}
-Der Mittelwert und seine Abweichung ist $\bar{n_\text{Luft}}= 1,000303 \pm 0,000016$
-Der Theoriewert ist mit $n=1,000292$ angegeben \cite{brechglas}.
+Der Mittelwert und seine Abweichung ist $\overline{n_\text{Luft}}= 1,000303 \pm 0,000016$.\\
+Der Theoriewert ist mit $n=1,000292$ angegeben \cite{brechglas}.\\
 Eine prozentuale Abweichung liegt mit $0,001\%$ vor.
