@@ -23,12 +23,10 @@ params, cov = curve_fit(Fitf, theta_P, Kontr)
 #b = ufloat(params[1], errors[1])
 #c = ufloat(params[2], errors[2])
 #d = ufloat(params[3], errors[3])
-
+print('Parameter: ', params, '\nFehler: ', np.sqrt(np.diag(cov)))
 x = np.linspace(0, 7, 1000)
 
 #theta = (np.pi/2 - c)/b
-
-#print(a)
 #print(b)
 #print(c)
 #print(d)
