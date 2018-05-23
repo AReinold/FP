@@ -1,11 +1,11 @@
 \section{Theorie}
 \subsection{Das Sagnac-Interferometer}
 Der schematische Aufbau eines Sagnac-Interferometers ist in Abbildung $\ref{aufbauschema}$ dargestellt.
-Der von der Lichtquelle stammende Strahl trifft über zwei, zur Strahljustierung genutzte,
+Der von einem Helium-Neon-Laser stammende Strahl trifft über zwei, zur Strahljustierung genutzte,
 Spiegel auf einen PBSC. PBSC steht hierbei für  Polarizing-Beam-Splitter-Cube. Dieser besteht aus zwei Prismen, welche durch ein
 Dielektrikum verbunden wurden. Der PBSC teilt den Strahl in zwei senkrecht zueinander
 polarisierte Strahlen, die orthogonal voneinander aus diesem austreten. Durch drei weitere justierbare Spiegel werden die beiden Strahlen auf eine Bahn gebracht, die sie in entgegengesetzter Richtung durchlaufen
-und welche sie zurück zum PBSC führen. Von dort aus überlagern sich die beiden Teilstrahlen und werden auf einen zweiten, um 45° geneigten, PBSC gelenkt, der diese erneut trennt
+und welche sie zurück zum PBSC führt. Von dort aus überlagern sich die beiden Teilstrahlen und werden auf einen zweiten, um 45° geneigten, PBSC gelenkt, der diese erneut in zwei senkrecht zueinander polarisierte Teilstrahlen aufspaltet
 und auf zwei verschiedene Photodioden bricht.
 \begin{figure}[H]
   \centering
@@ -38,13 +38,14 @@ Es lässt sich feststellen, dass:
 \begin{equation}
   \delta_{\text{konstruktiv}}=2\pi n + \pi \nonumber ,
 \end{equation}
-wobei $n$ eine natürliche ganze Zahl ist. Es folgt somit für $I_{\text{max}/\text{min}}$
+wobei $n$ eine natürliche ganze Zahl ist. Es folgt somit für $I_{\text{max}/\text{min}}$ mit der Anfangsintensität des Lasers $I_\text{Laser}\propto (E_1+E_2)^2$
 \begin{equation}
   I_{\text{max}/\text{min}} \propto I_{\text{Laser}}\left(1 \pm 2\cos(\phi)\sin(\phi)\right).
+  \label{eq:inten}
 \end{equation}
-Hiermit folgt für die Polarisationswinkelabhängigkeit des Kontrasts
+Hiermit folgt für die Polarisationswinkelabhängigkeit des Kontrasts aus $\ref{eq:kontrast}$ eingesetzt in $\ref{eq:inten}$ die Proportionalität
 \begin{equation}
-  K(\phi)=\sin(2\phi).
+  K(\phi)\propto |\sin(\phi)\cos(\phi)|.
 \end{equation}
 Es ist somit leicht zu erkennen, dass der höchste Kontrast bei einem Polarisationswinkel von $45°$ auftreten sollte.
 \subsection{Brechungsindexbestimmung von Gasen}
@@ -62,7 +63,7 @@ Aus diesem Grund erfährt ein Strahl, welcher in ein Medium mit einem verändert
   \Delta \phi= \frac{2\pi}{\lambda_{\text{vac}}}(n-1)L \, ,
   \label{eq:sieben}
 \end{equation}
-wobei  $L$ die in dem Medium durchquerte Strecke bezeichnet. Die entstandene Phasenverschiebung kann beim Sagnac-Interferometer zu Interferenzeffekten führen. Es lässt sich also
+wobei  $L$ die in dem Medium durchquerte Strecke bezeichnet. Die entstandene Phasenverschiebung führt beim Sagnac-Interferometer zu Interferenzeffekten. Es lässt sich also
 aus der Anzahl der gemessen Maxima der Brechungindex ermitteln. Für die Maxima gilt
 \begin{equation}
   M = \frac{\Delta \phi}{2 \pi}.
@@ -77,11 +78,19 @@ aus der Anzahl der gemessen Maxima der Brechungindex ermitteln. Für die Maxima 
 werden hierbei die beiden entgegengesetzt laufenden Strahlen jeweils durch ein, um den Winkel $\delta$ zur optischen Achse geneigtes, Glasplättchen geleitet. Beim Durchqueren
 der Glasplättchen treten zwei phasenverschiebende Effekte auf; zum einen wird durch die geometrische Lichtbrechung die Phase verschoben und zum anderen tritt wie beim
 Gas eine Phasenverschiebung durch den Brechungsindex direkt auf.
-Die Anzahl der Interferenzmaxima, welche durch diese, kompliziert zu berechnende, Phasenverschiebung auftritt, lässt  sich mit
+Für diese Phasenverschiebung gilt im Allgemeinen
+\begin{equation}
+  \Delta \phi = \frac{2\pii}{\lambda}L.
+\end{equation}
+Mit dem Snelliuschen Brechungsgesetz und einer Taylorentwicklung in führender Ordnung ergibt sich
+\begin{equation}
+  \phi(\theta)=\frac{2\pii}{\lambda}T\Bigl(\frac{n-1}{2n}\theta^2+O(\theta^4)\Bigr)
+\end{equation}
+woraus sich durch $M=2\frac{\Delta \phi}{2\pii}$ für die Anzahl der Interferenzmaxima
 \begin{equation}
   M \approx \frac{T}{\lambda_{\text{vac}}}\frac{n-1}{2n}(4\theta \delta)
 \end{equation}
-annähern. Hierbei bezeichnet $T$ die Dicke der Platten. Somit folgt für den Brechungsindex
+annähern lässt. Hierbei bezeichnet $T$ die Dicke der Platten. Somit folgt für den Brechungsindex
 \begin{equation}
   n_\text{Glas}=\frac{2\delta \theta T}{2\delta \theta T - M\lambda_\text{vac}}.
   \label{eq:glas}
