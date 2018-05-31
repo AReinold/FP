@@ -12,6 +12,8 @@ counts = np.genfromtxt('data/Würfel11.Spe', skip_header=12,
                        skip_footer=17)
 counts_0 = np.genfromtxt('data/Leermessung.Spe', skip_header=12,
                          skip_footer=17)
+counts_2 = np.genfromtxt('data/WürfelR11.Spe', skip_header=12,
+                       skip_footer=17)
 I_l, t_l, c_l, E_1 = np.genfromtxt('data/Alu1.txt', unpack=True)
 I_2, t_2, c_2, E_2= np.genfromtxt('data/Aluvoll.txt', unpack=True)
 I_3, t_3, c_3, E_3= np.genfromtxt('data/Pb1.txt', unpack=True)
@@ -22,6 +24,8 @@ leer = counts
 error_leer = np.sqrt(counts)
 null = counts_0
 error_null = np.sqrt(counts_0)
+leer2 = counts_2
+error_leer2 =  np.sqrt(counts_2)
 # df = pd.DataFrame(n)
 
 # Geometriematrix
@@ -88,13 +92,23 @@ plt.savefig('plots/leer.pdf')
 plt.close()
 
 print('(Zusaetzlich: Spektrum der Leer geplottet...)')
-
-c_no = 13708
-t_no = 74.46  # s
+# Alu_leer 2
+x = np.linspace(0,511*662/255,511)
+plt.bar(x, leer2, yerr=error_leer2)
+plt.xlim(0, 270*662/176)
+plt.title('2. Messung des leeren Wuerfels')
+plt.xlabel('Energie / keV')
+plt.ylabel('Ereignisse')
+plt.savefig('plots/Alu_leer2.pdf')
+plt.close()
+print('(Zusaetzlich: Ali Leer 2 geplottet...)')
+c_no = 11059
+t_no = 60.42
+e_no = 150  # s
 rate_no = c_no / t_no
 
 print('Messung ohne Wuerfel mit Rate: {:2f} +- {:2f} counts/s'
-      .format(rate_no, np.sqrt(c_no)/t_no))
+      .format(rate_no, e_no/t_no))
 
 # I_0s für die Projektionen 2, 9, 10, 11
 rate_l = c_l / t_l
