@@ -1,12 +1,15 @@
-\section{Aufbau und Versuchsdurchführung}
+\section{Aufbau}
 
 Untersucht wird die mittelere Schicht eines Würfels, der sich insgesamt aus 3x3x3 Elementarwürfeln zusammensetzt; somit wird eine 3x3 Ebene untersucht.
-Abbildung ????? zeigt, die ausgewählten Projektionsrichtungen der Messreihen.
+Abbildung $\ref{fig:richtung}$ zeigt, die ausgewählten Projektionsrichtungen der Messreihen.
 Insgesamt wird der Würfel aus 12 Richtungen bestrahlt.
 
-
-
-
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Bilder/richtung.png}
+  \caption{Messrichtungen der Projektion.}
+  \label{fig:richtung}
+\end{figure}
 
 Ein Foto des Versuchsaufbaus in ist Abbildung $\ref{fig:aufbau}$ zu sehen.
 \begin{figure}[H]
@@ -21,7 +24,15 @@ kleines Loch in einer Bleiplatte abgeschirmt und somit kollimiert.
 Im Lauf des Strahles ist eine Möglichkeit gegeben, den Würfel beweglich zu platzieren.
 Nach Abschirmung durch den Würfel trifft die verbleibende Strahlung auf einen Szintillationsdetektor.
 Dieser besteht aus einem anorganischen Szintillator und einem Photomultiplier.
-Durch die Bestrahlung wird der Szintillator angeregt und sendet im gleichen Verhältnis zu den eintreffenden Photonen, Lichtblitze aus.
+Durch die Bestrahlung wird der Szintillator angeregt und sendet im gleichen Verhältnis zu der eintreffenden Strahlung, Lichtblitze aus.
+Diese emittierten Photonen treffen auf eine Photokathode, aus der durch den Photoeffekt Elektronen herausgelöst werden.
+Diese werden schließlich im Photomultiplier vervielfacht und das entstandene elektrische Signal vom Multichannelanalyser ausgelesen.
 
-
-Hierbei wird
+\section{Versuchsdurchführung}
+Um am Ende einen Vergleichswert zu haben um etwaige äußere Umwelteinflüsse für die Auswertung berücksichtigen zu können, wird
+zu Anfang eine Messung der Nullrate durchgeführt.
+Auch sind die zu vermessenden Würfel von einem Aluminiumgitter umschlossen, das auch seperat vermessen wird.
+Da es Ziel des Versuchs ist mit der Tomographie einen vom Material her unbekannten Würfel zu analysieren, wird
+als Vergleichsmessung je ein Würfel komplett aus Blei und Aluminium vermessen.
+Da die Materialzusammensetzung dieser Würfel bekannt ist, werden 4 bis 5 Messungen pro Probe durchgeführt.
+Schließlich folgt die genauere Messung mit 12 Raumrichtungen des unbekannten Würfels.
