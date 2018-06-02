@@ -1,19 +1,19 @@
 \section{Auswertung}
-Die zu Beginn des Versuchs durchgeführte Nullmessung ergibt die in Abb.\ref{Leermessung1} dargestellte Energieverteilung. Sie zeigt deutlich den bei $^{137}$Cs auftretenden Peak um $662 \, \si{\kilo\electronvolt}$ sowie die davor liegende
+Die zu Beginn des Versuchs durchgeführte Nullmessung ergibt die in Abbildung $\ref{Leermessung}$ dargestellte Energieverteilung. Sie zeigt deutlich den bei $^{137}$Cs auftretenden Peak um $662 \, \si{\kilo\electronvolt}$ sowie die davor liegende
 Compton-Kante. Es wurden $11059$ Ereignisse in $60.42 \, \si{\second}$, oder $183 \,  \pm \, 3\, \frac{\text{counts}}{\si{\second}}$ gemessen.
 Die in den Spektren gezeigten Fehlerbalken stammen von den, durch die Poisson-Verteilung gegebenen, $\sqrt{n}$ Fehler.
 \begin{figure}[H]
   \centering
   \includegraphics{plots/leer.pdf}
-  \caption{Schematische Darstellung des Versuchsaufbaus.\cite{anleitung}}
-  \label{Leermessung1}
+  \caption{Balkendiagramm der Leermessung.}
+  \label{Leermessung}
 \end{figure}
 \subsection{Leerer Würfel}
-Die Untersuchungen des leeren Würfels ergeben die in den Abb.4 Abb.5 gezeigten Spektren. Der Intensitätsvektor
-für die verschiedenen Projektionen der ersten Messung ist in (7) zu finden, die der zweiten in (8).
+Die Untersuchungen des leeren Würfels ergeben die in den Abbildungen $\ref{Alukasten1}$ und $\ref{Alukasten2}$ gezeigten Spektren. Der Intensitätsvektor
+für die verschiedenen Projektionen der ersten Messung ist in $\ref{eq:vecleer1}$ zu finden, die der zweiten in $\ref{eq:vecleer2}$.
 Aufgrund des homogenen Aufbaus des Würfels,
 werden für nicht vermessene Projektionsrichtungen die Werte von äquivalenten Projektionen eingesetzt.
-Vermessen wurden die Projektionsrichtungen 1, 3, 13, 14, 15
+Vermessen wurden die Projektionsrichtungen 1, 3, 10, 11 und 12.
 
 \begin{equation}
 	\vec{I_1}=
@@ -56,14 +56,14 @@ Vermessen wurden die Projektionsrichtungen 1, 3, 13, 14, 15
 \begin{figure}[H]
   \centering
   \includegraphics{plots/Alu_leer.pdf}
-  \caption{Spektrum des leeren Würfels (1. Messung).\cite{anleitung}}
-  \label{Leermessung}
+  \caption{Spektrum des leeren Würfels (1. Messung).}
+  \label{Alukasten1}
 \end{figure}
 \begin{figure}[H]
   \centering
   \includegraphics{plots/Alu_leer2.pdf}
-  \caption{Spektrum des leeren Würfels (2. Messung).\cite{anleitung}}
-  \label{Leermessung}
+  \caption{Spektrum des leeren Würfels (2. Messung).}
+  \label{Alukasten2}
 \end{figure}
 \subsection{Untersuchung der Würfel 2 und 3}
 Die Bestimmung des Absorptionskoeffizienten der Würfel 2 und 3, welche jeweils komplett aus Aluminium oder Blei bestehen, nutzt die Tatsache, dass sich durch deren Aufbau die verschiedenen gemessenen Projektionen mitteln lassen
@@ -76,28 +76,50 @@ und es möglich ist, die Geometriematrix zu einem Vektor in den einzelnen Kompon
 		2\sqrt{2} \\
 		\sqrt{2}\\
     \sqrt{2}
-	\end{pmatrix} \; .
+	\end{pmatrix}
 \end{equation}
 \begin{equation}
 	\vec{A_3}=
 	\begin{pmatrix}
 		2\sqrt{2} \\
 		3\sqrt{2} \\
-		2t\sqrt{2} \\
+		2\sqrt{2} \\
 		\sqrt{2}\\
-	\end{pmatrix} \; .
+	\end{pmatrix}
 \end{equation}
-$\vec{A_2}$ und $\vec{A_3}$ erlauben es, mit einen Least-Square-Fit und (6), die Absorptionskoeffizienten zu berechnen. Es ergibt sich:
-\begin{equation}
-  \text{Würfel 2: } \left(0.22 \pm 0.02\right) \, \frac{1}{\si{\centi\meter}} \nonumber
-\end{equation}
-\begin{equation}
-  \text{Würfel 3: } \left(1.26 \pm 0.09\right) \, \frac{1}{\si{\centi\meter}} \nonumber
-\end{equation}
-Für Würfel 2 wurden bei der Untersuchung die Projektionsrichtungen 1, 3, 13, 14, 15 und bei Würfel 3: 3, 13, 14, 15
+$\vec{A_2}$ und $\vec{A_3}$ erlauben es, mit einen Least-Square-Fit und $\ref{eq:abweichung}$, die Absorptionskoeffizienten zu berechnen.
+\clearpage
+Es ergibt sich:
+\begin{equation*}
+  \text{Würfel 2 (Aluminium): }\; \mu = (0.22 \pm 0.02) \, \frac{1}{\si{\centi\meter}}
+\end{equation*}
+\begin{equation*}
+  \text{Würfel 3 (Blei): } \; \mu = (1.26 \pm 0.09) \, \frac{1}{\si{\centi\meter}}
+\end{equation*}
+Für Würfel 2 wurden bei der Untersuchung die Projektionsrichtungen 1, 3, 10, 11, 12 und bei Würfel 3: 3, 10, 11, 12 genommen.
 \subsection{Untersuchung von Würfel 5}
-Der Würfel unbekannten Aufbaus (Würfel 5) wird mit zwölf Projektionsrichtungen untersucht, um so genauere Schlüsse auf das Material der einzelnen Elementarwürfel zu erlauben. Da der Aufbau des Würfels
-gänzlich unbekannt ist, ist es in diesem Fall nicht möglich die Geometriematrix A zu vereinfachen. Der Intensitätsvektor $\vec{I_5}$ und der Logarithmus von $\vec{I_5}$ ($\vec{\tilde{I_5}}$) lauten:
+Der Würfel unbekannten Aufbaus (Würfel 5) wird mit zwölf Projektionsrichtungen untersucht, um so genauere Schlüsse auf das Material der einzelnen Elementarwürfel zu erlauben.
+Die Projektionsrichtungen sind durch die Matrix \ref{eq:gigamatrix} gegeben.
+Da der Aufbau des Würfels gänzlich unbekannt ist, ist es in diesem Fall nicht möglich die Geometriematrix A zu vereinfachen.
+\begin{equation}
+	A=
+	\begin{pmatrix}
+    1& 1& 1& 0& 0& 0& 0& 0& 0\\
+    0& 0& 0& 1& 1& 1& 0& 0& 0\\
+    0 & 0& 0& 0& 0& 0& 1& 1& 1\\
+    1& 0& 0& 1& 0& 0& 1& 0& 0\\
+    0& 1& 0& 0& 1& 0& 0& 1& 0\\
+    0& 0& 1& 0& 0& 1& 0& 0& 1\\
+    0& \sqrt{2}& 0& \sqrt{2}& 0& 0& 0& 0& 0\\
+    0& 0& \sqrt{2}& 0&\sqrt{2}& 0& \sqrt{2}& 0& 0\\
+    0& 0& 0& 0& 0&\sqrt{2}& 0& \sqrt{2}& 0\\
+    0& 0& 0&\sqrt{2}& 0& 0& 0&\sqrt{2}& 0\\
+    \sqrt{2}& 0& 0& 0& \sqrt{2}& 0& 0& 0& \sqrt{2}\\
+    0& \sqrt{2}& 0& 0& 0& \sqrt{2}& 0& 0& 0
+	\end{pmatrix}
+  \label{eq:gigamatrix}
+\end{equation}
+Der Intensitätsvektor $\vec{I_5}$ und der Logarithmus von $\vec{I_5}$ ($\vec{\tilde{I_5}}$) lauten:
 \begin{equation}
 	\vec{I_5}=
 	\begin{pmatrix}
@@ -118,7 +140,7 @@ gänzlich unbekannt ist, ist es in diesem Fall nicht möglich die Geometriematri
 	\label{eq:vec5}
 \end{equation}
 \begin{equation}
-	\vec{I_5}=
+	\vec{\tilde{I_5}}=
 	\begin{pmatrix}
 		\num{1.6 \pm 0.2} \\
 		\num{1.6 \pm 0.2} \\
@@ -134,15 +156,16 @@ gänzlich unbekannt ist, ist es in diesem Fall nicht möglich die Geometriematri
     \num{2.0\pm 0.2} \\
 	\end{pmatrix}
     \sfrac{\text{counts}}{\text{s}}
-	\label{eq:vecleer1}
+	\label{eq:vec6}
 \end{equation}
-Die Absorptionskoeffizienten $\mu$ der Teilwürfel lassen sich hiermit wie bei den Würfeln 2 und 3 bestimmen. Es ergibt sich:
+Die Absorptionskoeffizienten $\mu$ der Teilwürfel lassen sich hiermit wie bei den Würfeln 2 und 3 bestimmen.\\
+Es ergibt sich:
 \begin{table}[H]
 \centering
 \caption{Berechnete Absorptionskoeffizienten der einzelnen Teilwürfel.}
 \label{companioncube}
 \begin{tabular}{c|c|c}
-  Elementarwürfel& $\mu$ in $\frac{1}{\si{\second}}$& Zugeordnetes Material \\
+  Elementarwürfel& $\mu$ in $\frac{1}{\si{cm}}$& Zugeordnetes Material \\
   \hline
 1 & 0.56 \pm \, 0.09 & Eisen\\
 2 & 0.6  \pm \, 0.07&Messing \\
@@ -155,20 +178,3 @@ Die Absorptionskoeffizienten $\mu$ der Teilwürfel lassen sich hiermit wie bei d
 9 & -0.19 \pm \,0.09 &Delrin\\
 \end{tabular}
 \end{table}
-\begin{equation}
-	A=
-	\begin{pmatrix}
-    1& 1& 1& 0& 0& 0& 0& 0& 0\\
-    0& 0& 0& 1& 1& 1& 0& 0& 0\\
-    0 & 0& 0& 0& 0& 0& 1& 1& 1\\
-    1& 0& 0& 1& 0& 0& 1& 0& 0\\
-    0& 1& 0& 0& 1& 0& 0& 1& 0\\
-    0& 0& 1& 0& 0& 1& 0& 0& 1\\
-    0& \sqrt{2}& 0& \sqrt{2}& 0& 0& 0& 0& 0\\
-    0& 0& \sqrt{2}& 0&\sqrt{2}& 0& \sqrt{2}& 0& 0\\
-    0& 0& 0& 0& 0&\sqrt{2}& 0& \sqrt{2}& 0\\
-    0& 0& 0&\sqrt{2}& 0& 0& 0&\sqrt{2}& 0\\
-    \sqrt{2}& 0& 0& 0& \sqrt{2}& 0& 0& 0& \sqrt{2}\\
-    0& \sqrt{2}& 0& 0& 0& \sqrt{2}& 0& 0& 0
-	\end{pmatrix}
-\end{equation}
