@@ -2,12 +2,12 @@
 Die Auswertung, genauer die Fehlerrechnung, die Plots und Ausgleichsrechnung erfolgt mit den Paketen
 Numpy \cite{numpy}, Uncertainties \cite{uncertainties}, Matplotlib \cite{matplotlib} und Scipy \cite{scipy} in der Programmiersprache python.
 \subsection{Fehlerrechnung}
-Zu Beginn der Auswertung sei gesagt, dass eine Ungenauigkeit von $\SI{30}{\percent}$ des analogen zum digitalen Glühkathodenvakuummessgeräts
+Zu Beginn der Auswertung sei gesagt, dass eine Ungenauigkeit von $\SI{10}{\percent}$ des analogen zum digitalen Glühkathodenvakuummessgeräts
 bei der Messung festgestellt und im Folgenden berücksichtigt wurde.
-Für das Pirani-Messgerät ist eine Ungenauigkeit von $\SI{10}{\percent}$ angegeben\cite{anleitung}.
+Für das Pirani-Messgerät ist eine Ungenauigkeit von $\SI{30}{\percent}$ angegeben\cite{anleitung}.
 Auch muss erwähnt werden, dass die Zeitmessung mit einer Handystoppuhr erfolgte und eine durch menschliche Reaktion verursachte
 Verzögerung von $\SI{180}{ms}$ beachtet wird\cite{reaktion}.
-In den nachfolgenden Messwerttabellen sind die Abweichungen schon miteingerechnet.\\
+In den nachfolgenden Messwerttabellen sind die Abweichungen schon als einseitiger Fehler auf die Messzeit addiert.\\
 Die Mittelwerte werden nach
 \begin{equation}
 	\bar{x}=\frac{1}{N}\sum_{i}^N x_i
