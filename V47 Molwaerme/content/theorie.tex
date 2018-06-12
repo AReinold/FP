@@ -16,3 +16,28 @@ mit der allgemeinen Gaskonstante R. Gemäß diesem Ergebnis muss die spezifische
 \end{equation}
 Dieser Wert wird zwar für hohe Temperatur erreicht, jedoch zeigt sich, dass die klassische Physik an der Erklärung der Temperaturabhängigkeit der klassischen Physik scheitert
 und alternative Modelle notwendig sind.
+\subsection{Das Einstein-Modell}
+Im Einstein-Modell wird angenommen, dass alle Atome auf Gitterplätzen mit der Frequenz $\omega$ schwingen und die Energie die sie aufnehmen oder abgeben können in ganze vielfache
+von $\text{\hbar \omega}$ gequantelt ist. Die mittlere Energie pro Oszillator lässt sich über die Boltzmann-Verteilung:
+\begin{equation}
+   W(n) = \exp\left( -\frac{n\hbar\omega}{k_\text{B}T} \right)
+\end{equation}
+bestimmen. Mit dieser lässt sich die Wahrscheinlichkeit, dass ein Oszillator bei Temperatur $T$, welchher im Glechgewicht mit seiner Umgebung ist, eine Energie $n \text{\hbar \omega}$ besitzt beschreiben.
+Wird dies über alle Energie summiert ergibt sich:
+\begin{equation}
+  \langle u\rangle_\text{Einstein}=\frac{\hbar\omega}{e^{\sfrac{\hbar\omega}{kT}}-1}.
+\end{equation}
+Hiermit folgt für die Molwärme:
+\begin{equation}
+  C_\text{V, Einstein} = 3R\frac{\hbar^2\omega^2}{k_\text{B}^2T^2}
+                          \frac{\exp(\hbar\omega/k_\text{B}T)}{\left[\exp(\hbar\omega/k_\text{B}T)\right-1]^2} \,.
+\end{equation}
+Es ist zu erkennen, dass dieser Wert für hohe Temperaturen gegen 3R läuft. Da jedoch die Annahme, dass die Schwingungen im Kristall nur eine Frequenz besitzen, eine grobe
+Näherung darstellt, fallen auch im Einstein-Modell Abweichungen zu den experimentellen Werten auf.
+\subsection{Das Debye-Modell}
+Das Debye-Modell liefert eine genauere Näherung an die experimentellen Werte, indem es anders als das Einstein-Modell von einer spektralen Verteilung $Z(\omega)$ der Eigenschwingungen ausgeht.
+Diese komplizierte Verteilung wird dabei durch die Annahme, dass die Phasengeschwindigkeit von der Frequenz und der Ausbreitungsrichtung der Welle im Kristall unabhängig ist, vereinfacht.
+Da ein Kristall aus $N_\text{L}$ Atome nur $3N_\text{L}$ Eigenschwingungen besitzen kann, muss es eine maximale Grenzfrequenz $\omega_\text{D}$ geben, für welche gilt:
+\begin{equation
+  \int_0^{\omega_\text{D}} Z(\omega)\text{d}\omega = 3N_\text{L}\,,
+\end{equation}
