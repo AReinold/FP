@@ -41,3 +41,19 @@ Da ein Kristall aus $N_\text{L}$ Atome nur $3N_\text{L}$ Eigenschwingungen besit
 \begin{equation}
   \int_0^{\omega_\text{D}} Z(\omega)\text{d}\omega = 3N_\text{L}\,.
 \end{equation}
+Mit den erwähnten Näherungen und der Debye-Frequenz $\int_0^{\omega_\text{D}}$, lässt sich die spektrale Dichte der Eigenschwingungen durch:
+\begin{equation}
+  \text{Z}(\omega)\textbf{d}\omega= \frac{9\text{N}_\text{L}}{\omega_{\text{D}}^3}\omega^2\textbf{d}\omega
+\end{equation}
+beschreiben.
+Somit folgt für die Molwärme:
+\begin{equation}
+ C_\text{V, Debye} = 9R \left(\frac{T}{\theta_\text{D}}\right)^3 \int_0^{\theta_\text{D}/T} \frac{x^4\text{e}^x}{(\text{e}^x-1)^2}\,\text{d}x \, ,
+\end{equation}
+hierbei stehen $x$ und $\frac{\Theta_\text{T}}{\text{T}}$ für:
+\begin{equation}
+  x = \frac{\hbar\omega}{\text{k}_\text{B}T} \qquad \text{und} \qquad \frac{\theta_\text{D}}{T} = \frac{\hbar\omega_\text{D}}{\text{k}_\text{B}T}\,.
+\end{equation}
+Diese Funktion für $C_V$ ist Allgemein und Materialunabhängig, stattdessen hängt sie von der Debye-Temperatur $\Theta_D$ ab, welche durch die Kristalleigenschaften gegeben ist. Es ist zu erkennen, dass diese Funktion
+für hohe Temperaturen gegen 3R läuft und sich dort somit mit der klassischen THeorie deckt. Für niedrige Temperaturen verläuft $C_V$ hingegen mit einer $T^3$ abhänigigkeit.\\
+Das Debye-Modell lässt als vereinfachende Annahme den Molwärmefaktor der Leitungselektronen außer acht, da dieser Beitrag bei den betrachteten Temperaturen hinreichend gering ist.
