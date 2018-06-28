@@ -1,7 +1,6 @@
 \section{Auswertung}
 Die zu Beginn des Versuchs durchgeführte Nullmessung ergibt die in Abbildung $\ref{Leermessung}$ dargestellte Energieverteilung. Sie zeigt deutlich den bei $^{137}$Cs auftretenden Peak um $662 \, \si{\kilo\electronvolt}$ sowie die davor liegende
-Compton-Kante. Es wurden $11059$ Ereignisse in $60.42 \, \si{\second}$, oder $183 \,  \pm \, 3\, \frac{\text{counts}}{\si{\second}}$ gemessen.
-Die in den Spektren gezeigten Fehlerbalken stammen von den, durch die Poisson-Verteilung gegebenen, $\sqrt{n}$ Fehler.
+Compton-Kante. Es werden $11059$ Ereignisse in $60.42 \, \si{\second}$, oder $183 \,  \pm \, 3\, \frac{\text{Zä}}{\si{\second}}$ gemessen.
 \begin{figure}[H]
   \centering
   \includegraphics{plots/leer.pdf}
@@ -9,11 +8,10 @@ Die in den Spektren gezeigten Fehlerbalken stammen von den, durch die Poisson-Ve
   \label{Leermessung}
 \end{figure}
 \subsection{Leerer Würfel}
-Die Untersuchungen des leeren Würfels ergeben die in den Abbildungen $\ref{Alukasten1}$ und $\ref{Alukasten2}$ gezeigten Spektren. Der Intensitätsvektor
-für die verschiedenen Projektionen der ersten Messung ist in $\ref{eq:vecleer1}$ zu finden, die der zweiten in $\ref{eq:vecleer2}$.
+Der Intensitätsvektor für die verschiedenen Projektionen der ersten Messung ist in $\ref{eq:vecleer1}$ zu finden, die der zweiten in $\ref{eq:vecleer2}$.
 Aufgrund des homogenen Aufbaus des Würfels,
 werden für nicht vermessene Projektionsrichtungen die Werte von äquivalenten Projektionen eingesetzt.
-Vermessen wurden die Projektionsrichtungen 1, 3, 10, 11 und 12.
+Vermessen werden die Projektionsrichtungen 1, 3, 10, 11 und 12.
 
 \begin{equation}
 	\vec{I_1}=
@@ -53,18 +51,6 @@ Vermessen wurden die Projektionsrichtungen 1, 3, 10, 11 und 12.
     \sfrac{\text{counts}}{\text{s}}
 	\label{eq:vecleer2}
 \end{equation}
-\begin{figure}[H]
-  \centering
-  \includegraphics{plots/Alu_leer.pdf}
-  \caption{Spektrum des leeren Würfels (1. Messung).}
-  \label{Alukasten1}
-\end{figure}
-\begin{figure}[H]
-  \centering
-  \includegraphics{plots/Alu_leer2.pdf}
-  \caption{Spektrum des leeren Würfels (2. Messung).}
-  \label{Alukasten2}
-\end{figure}
 \subsection{Untersuchung der Würfel 2 und 3}
 Die Bestimmung des Absorptionskoeffizienten der Würfel 2 und 3, welche jeweils komplett aus Aluminium oder Blei bestehen, nutzt die Tatsache, dass sich durch deren Aufbau die verschiedenen gemessenen Projektionen mitteln lassen
 und es möglich ist, die Geometriematrix zu einem Vektor in den einzelnen Komponenten zu summieren. Diese Vektoren $\vec{A_2}$ und $\vec{A_3}$ sind:
@@ -87,7 +73,7 @@ und es möglich ist, die Geometriematrix zu einem Vektor in den einzelnen Kompon
 		\sqrt{2}\\
 	\end{pmatrix}
 \end{equation}
-$\vec{A_2}$ und $\vec{A_3}$ erlauben es, mit einen Least-Square-Fit und $\ref{eq:abweichung}$, die Absorptionskoeffizienten zu berechnen.
+$\vec{A_2}$ und $\vec{A_3}$ erlauben es, mit einen Least-Square-Fit und Gleichung $\ref{eq:abweichung}$, die Absorptionskoeffizienten zu berechnen.
 \clearpage
 Es ergibt sich:
 \begin{equation*}
@@ -96,11 +82,13 @@ Es ergibt sich:
 \begin{equation*}
   \text{Würfel 3 (Blei): } \; \mu = (1.26 \pm 0.09) \, \frac{1}{\si{\centi\meter}}
 \end{equation*}
-Für Würfel 2 wurden bei der Untersuchung die Projektionsrichtungen 1, 3, 10, 11, 12 und bei Würfel 3: 3, 10, 11, 12 genommen.
+Für Würfel 2 werden bei der Untersuchung die Projektionsrichtungen 1, 3, 10, 11, 12 und bei Würfel 3: 3, 10, 11, 12 genommen.
 \subsection{Untersuchung von Würfel 5}
-Der Würfel unbekannten Aufbaus (Würfel 5) wird mit zwölf Projektionsrichtungen untersucht, um so genauere Schlüsse auf das Material der einzelnen Elementarwürfel zu erlauben.
+Der Würfel unbekannten Aufbaus (Würfel 5) wird mit zwölf Projektionsrichtungen untersucht, um Rückschlüsse auf das Material der einzelnen Elementarwürfel zu erlauben.
 Die Projektionsrichtungen sind durch die Matrix \ref{eq:gigamatrix} gegeben.
-Da der Aufbau des Würfels gänzlich unbekannt ist, ist es in diesem Fall nicht möglich die Geometriematrix A zu vereinfachen.
+Da die Materialzusammensetzung des Würfels gänzlich unbekannt ist, ist es in diesem Fall nicht möglich die Geometriematrix A zu vereinfachen.
+Die Einträge der Matrix ergeben sich aus 0, wenn die Richtung nicht durchlaufen wird,
+ aus 1, wenn der Würfel mit einer Kantenlänge durchlaufen wird und mit $\sqrt{2}$ für ein Durchlaufen durch eine Diagonale.
 \begin{equation}
 	A=
 	\begin{pmatrix}
@@ -164,17 +152,17 @@ Es ergibt sich:
 \centering
 \caption{Berechnete Absorptionskoeffizienten der einzelnen Teilwürfel.}
 \label{companioncube}
-\begin{tabular}{c|c|c}
-  Elementarwürfel& $\mu$ in $\frac{1}{\si{cm}}$& Zugeordnetes Material \\
+\begin{tabular}{c|c|c|c}
+  Elementarwürfel& $\mu$ in $\frac{1}{\si{cm}}$& Zugeordnetes Material & Abweichung\\
   \hline
-1 & 0.56 \pm \, 0.09 & Eisen\\
-2 & 0.6  \pm \, 0.07&Messing \\
-3 & 0.29 \pm\, 0.1  &Aluminium\\
-4 & -0.1  \pm\, 0.06&Delrin \\
-5 & 0.69 \pm \,0.08 &Messing\\
-6 & 0.86  \pm \,0.08& Messing\\
-7 & 0.33  \pm \, 0.08& Aluminium\\
-8 & 0.49  \pm \,0.07 &Eisen\\
-9 & -0.19 \pm \,0.09 &Delrin\\
+1 & 0.56 \pm \, 0.09 & Eisen & 0\\
+2 & 0.6  \pm \, 0.07&Messing & 0\\
+3 & 0.29 \pm\, 0.1  &Aluminium & 0\\
+4 & -0.1  \pm\, 0.06&Delrin & 0\\
+5 & 0.69 \pm \,0.08 &Messing & 0\\
+6 & 0.86  \pm \,0.08& Messing & 0\\
+7 & 0.33  \pm \, 0.08& Aluminium & 0\\
+8 & 0.49  \pm \,0.07 &Eisen & 0\\
+9 & -0.19 \pm \,0.09 &Delrin & 0\\
 \end{tabular}
 \end{table}

@@ -2,10 +2,10 @@
 Die Auswertung, genauer die Fehlerrechnung, die Plots und Ausgleichsrechnung erfolgt mit den Paketen
 Numpy \cite{numpy}, Uncertainties \cite{uncertainties}, Matplotlib \cite{matplotlib} und Scipy \cite{scipy} in der Programmiersprache python.
 \subsection{Fehlerrechnung}
-Zu Beginn der Auswertung sei gesagt, dass eine Ungenauigkeit von $\SI{30}{\percent}$ des analogen zum digitalen Wärmeleitungsmmessgeräts
+Zu Beginn der Auswertung sei gesagt, dass eine Ungenauigkeit von $\SI{30}{\percent}$ des analogen zum digitalen Wärmeleitungsmessgeräts (Pirani)
 bei der Messung festgestellt und im Folgenden berücksichtigt wurde.
-Für das Glühkathodenvakuummessgerät ist eine Ungenauigkeit von $\SI{10}{\percent}$ angegeben\cite{anleitung}.
-Das Prinani-Messgerät ist das Modell Thermovac TR205 von Leybold-Heraeus; die Heißkathode Ionivac IM210 ebenso von Leybold-Heraeus.
+Für die lineare Skala des Glühkathodenvakuummessgeräts ist eine Ungenauigkeit von $\SI{10}{\percent}$ angegeben\cite{anleitung}.
+Das Pirani-Messgerät ist das Modell Thermovac TR205 von Leybold-Heraeus; die Heißkathode Ionivac IM210 ebenso von Leybold-Heraeus.
 
 Auch muss erwähnt werden, dass die Zeitmessung mit einer Handystoppuhr erfolgte und eine durch menschliche Reaktion verursachte
 Verzögerung von $\SI{180}{ms}$ beachtet wird\cite{reaktion}.
@@ -31,7 +31,7 @@ Für die Fehlerfortpflanzung einer Variablen $x_i$ gilt
 \end{equation}
 Für die Berechnung des Logarithmus für die Evakuierungsmessung muss der Fehler dessen aus bereits fehlerbehafteten Größen nach
 \begin{equation}
-	\sigma = \sqrt{\frac{\sigma_p^2}{(p-p_E)^2}+\frac{\sigma_{p0}^2}{(p_0-p_E)^2}+\sigma_{p_E}^2\bigl(\frac{1}{p_0-p_E}-\frac{1}{p_-p_E}\bigr)^2}
+	\sigma = \sqrt{\frac{\sigma_p^2}{(p-p_E)^2}+\frac{\sigma_{p0}^2}{(p_0-p_E)^2}+\sigma_{p_E}^2 \Bigl(\frac{1}{p_0-p_E}-\frac{1}{p-p_E}\Bigr)^2}
 \end{equation}
 berechnet werden.\clearpage
 \subsection{Bestimmung des Volumens}
@@ -83,7 +83,7 @@ Turbo SST81 der Firma ILMAC mit einem Saugvermögen von $\SI{77}{l/s}$
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c}
 {$p \:/\: \si{mbar}$} & {$\ln{\Bigl( \frac{p(t)-p_E}{p_0-p_E}\Bigr)}$} & {$t_1 \:/\: \si{s} $} & {$t_2 \:/\: \si{s}$} & {$t_3 \:/\: \si{s}$} & {$t_4 \:/\: \si{s}$} & {$t_5 \:/\: \si{s}$} & {$t_6 \:/\: \si{s}$}& {$t_7 \:/\: \si{s}$} & {$t_8 \:/\: \si{s}$} & {$\bar{t} \:/\: \si{s}$}\\
 \midrule
-$(8,1 \pm \, 0,8)\cdot 10^{-3}$ & 0 \pm 0,15 & 0 &  0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+$(8,1 \pm \, 0,8)\cdot 10^{-3}$ & $0 \pm \, 0,15$ & 0 &  0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
 $(6,0 \pm \, 0,6)\cdot 10^{-3}$ & $-(0,29 \pm \, 0,15)$ & 0,44 & 0,87 & 0,78 & 0,70 & 0,79 & 0,87 & 0,78 & 0,83 & $0,76 \pm \, 0,05$\\
 $(3,0 \pm \, 0,3)\cdot 10^{-3}$ & $-(0,98 \pm \, 0,15)$ & 0,74 & 1,40 & 1,21 & 1,09 & 1,35 & 1,43 & 1,41 & 1,62 & $1,28 \pm \, 0,10$\\
 $(6,0 \pm \, 0,6)\cdot 10^{-4}$ & $-(2,62 \pm \, 0,15)$ & 2,82 & 3,13 & 2,82 & 3,00 & 3,10 & 3,20 & 3,09 & 2,79 & $3,00 \pm \, 0,06$\\
@@ -429,6 +429,7 @@ Anschließend lassen sich die graphischen Darstellungen in den Abbildungen $\ref
 \end{figure}\clearpage
 Die Regressionsgeraden besitzen dieselbe lineare Form wie bei der Leckratenmessung der Turbopumpe auch und so lässt sich ebenso das Saugvermögen
 aus dem Steigungsparameter $m$ und dem Volumen $V$ mit $S=\frac{V}{p_G}m$ unter den verschiedenen Gleichgewichtsdrücken $p_G$ berechnen.\\
+
 Abbildung $\ref{leckdreh1}$:
 	\begin{align*}
 		p_G=& (1,0 \pm \, 0,3)  \, \si{mbar}\\
@@ -452,7 +453,7 @@ Abbildung $\ref{leckdreh1}$:
 			\end{align*}
 		Für die Berechnung der Ausgleichsfunktion sind die Messwerte für den Druck bei $\SI{0,4}{mbar}$ und $\SI{0,6}{mbar}$ ausgelassen worden.
 		Dies geschieht aufgrund dessen, dass wegen der hohen Abweichung zu der erwarteten Linearität vermutet wird,
-		 dass dies am Verhalten des virtuellen Pumpens liegt.
+		 dass dies am Verhalten des virtuellen Pumpens liegt.\\
 
 		Abbildung $\ref{leckdreh4}$:
 			\begin{align*}
