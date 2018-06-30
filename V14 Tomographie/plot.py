@@ -71,7 +71,7 @@ def kleinsteQuadrate(y, W, A):
 
 # Alu_leer
 x = np.linspace(0,511*662/255,511)
-plt.bar(x, leer, yerr=error_leer)
+plt.bar(x, leer)
 plt.xlim(0, 270*662/176)
 plt.title('Messung des leeren Wuerfels')
 plt.xlabel('Energie / keV')
@@ -83,7 +83,7 @@ print('Spektrum der Alu_leer geplottet...')
 
 # Leer
 x = np.linspace(0,511*662/256,511)
-plt.bar(x, null, yerr=error_null)
+plt.bar(x, null)
 plt.xlim(0, 300*662/256)
 plt.title('Messung ohne Wuerfel')
 plt.xlabel('Energie / keV')
@@ -94,7 +94,7 @@ plt.close()
 print('(Zusaetzlich: Spektrum der Leer geplottet...)')
 # Alu_leer 2
 x = np.linspace(0,511*662/255,511)
-plt.bar(x, leer2, yerr=error_leer2)
+plt.bar(x, leer2)
 plt.xlim(0, 270*662/176)
 plt.title('2. Messung des leeren Wuerfels')
 plt.xlabel('Energie / keV')

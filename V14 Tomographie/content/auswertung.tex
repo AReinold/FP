@@ -11,7 +11,8 @@ Compton-Kante. Es werden $11059$ Ereignisse in $60.42 \, \si{\second}$, oder $18
 Der Intensitätsvektor für die verschiedenen Projektionen der ersten Messung ist in $\ref{eq:vecleer1}$ zu finden, die der zweiten in $\ref{eq:vecleer2}$.
 Aufgrund des homogenen Aufbaus des Würfels,
 werden für nicht vermessene Projektionsrichtungen die Werte von äquivalenten Projektionen eingesetzt.
-Vermessen werden die Projektionsrichtungen 1, 3, 10, 11 und 12.
+Vermessen werden die Projektionsrichtungen 1, 3, 10, 11 und 12. Die Angegebenen Fehler ergeben sich aus dem Fehler der gemessenen Ereignisse geteilt durch die Zeit. Es ist
+zu Erwähnen, dass zwischen den beiden Messungen die Würfel 2 und 3 Untersucht wurden um die Messung auf systematische Fehler zu prüfen.
 
 \begin{equation}
 	\vec{I_1}=
@@ -51,6 +52,7 @@ Vermessen werden die Projektionsrichtungen 1, 3, 10, 11 und 12.
     \sfrac{\text{counts}}{\text{s}}
 	\label{eq:vecleer2}
 \end{equation}
+Es ist festzustellen, dass zwischen den beiden Messungen zum Teil Abweichungen außerhalb der Messungenauigkeit auftreten. Eine Erklärung für diese Abweichungen könnte sein, dass die Messapparaturen erst mit der Zeit warmlaufen müssen.
 \subsection{Untersuchung der Würfel 2 und 3}
 Die Bestimmung des Absorptionskoeffizienten der Würfel 2 und 3, welche jeweils komplett aus Aluminium oder Blei bestehen, nutzt die Tatsache, dass sich durch deren Aufbau die verschiedenen gemessenen Projektionen mitteln lassen
 und es möglich ist, die Geometriematrix zu einem Vektor in den einzelnen Komponenten zu summieren. Diese Vektoren $\vec{A_2}$ und $\vec{A_3}$ sind:
@@ -73,15 +75,59 @@ und es möglich ist, die Geometriematrix zu einem Vektor in den einzelnen Kompon
 		\sqrt{2}\\
 	\end{pmatrix}
 \end{equation}
+Als Intensitätsvektoren ergeben sich:
+\begin{equation}
+	\vec{I_{Alu}}=
+	\begin{pmatrix}
+		\num{93.9 \pm 2.5} \\
+		\num{93.9 \pm 2.5} \\
+		\num{93.9\pm 2.5} \\
+		\num{97.6\pm 2.5} \\
+		\num{97.6\pm 2.5} \\
+		\num{97.6\pm 2.5} \\
+		\num{88.2\pm 2.4} \\
+		\num{84.3\pm 2.5} \\
+		\num{110.1\pm 2.4} \\
+    \num{88.2\pm 2.4} \\
+    \num{84.3\pm 2.5} \\
+    \num{110.1\pm 2.4} \\
+	\end{pmatrix}
+    \sfrac{\text{counts}}{\text{s}}
+	\label{eq:vecleer1}
+\end{equation}
+\begin{equation}
+	\vec{I_{Blei}}=
+	\begin{pmatrix}
+		\num{5.6 \pm 0.3} \\
+		\num{5.6 \pm 0.3} \\
+		\num{5.6\pm 0.3} \\
+		\num{5.6\pm 0.3} \\
+		\num{5.6\pm 0.3} \\
+		\num{5.6\pm 0.3} \\
+		\num{3.8\pm 0.2} \\
+		\num{3.0\pm 0.2} \\
+		\num{5.0\pm 0.2} \\
+    \num{3.8\pm 0.2 } \\
+    \num{3.0\pm 0.2} \\
+    \num{5.0\pm 0.2} \\
+	\end{pmatrix}
+    \sfrac{\text{counts}}{\text{s}}
+	\label{eq:vecleer1}
+\end{equation}
+Die Fehler werden hier wie beim leeren Würfel ermittelt.
 $\vec{A_2}$ und $\vec{A_3}$ erlauben es, mit einen Least-Square-Fit und Gleichung $\ref{eq:abweichung}$, die Absorptionskoeffizienten zu berechnen.
+Zur Berücksichtigung des Würfelgehäuses wird hierbei $\vec{I_1}$ genutzt.
 \clearpage
 Es ergibt sich:
-\begin{equation*}
-  \text{Würfel 2 (Aluminium): }\; \mu = (0.22 \pm 0.02) \, \frac{1}{\si{\centi\meter}}
-\end{equation*}
-\begin{equation*}
-  \text{Würfel 3 (Blei): } \; \mu = (1.26 \pm 0.09) \, \frac{1}{\si{\centi\meter}}
-\end{equation*}
+\begin{table}[H]
+  \centering
+\begin{tabular}{c|c|c}
+  & Material &  $\mu,\frac{1}{\si{cm}}$ \\
+  \hline
+Würfel 2 & Aluminium & $0.22 \pm 0.02$ \\
+Würfel 3 & Blei      & $1.26 \pm 0.09$
+\end{tabular}
+\end{table}
 Für Würfel 2 werden bei der Untersuchung die Projektionsrichtungen 1, 3, 10, 11, 12 und bei Würfel 3: 3, 10, 11, 12 genommen.
 \subsection{Untersuchung von Würfel 5}
 Der Würfel unbekannten Aufbaus (Würfel 5) wird mit zwölf Projektionsrichtungen untersucht, um Rückschlüsse auf das Material der einzelnen Elementarwürfel zu erlauben.
@@ -146,6 +192,7 @@ Der Intensitätsvektor $\vec{I_5}$ und der Logarithmus von $\vec{I_5}$ ($\vec{\t
     \sfrac{\text{counts}}{\text{s}}
 	\label{eq:vec6}
 \end{equation}
+Die angegeben Fehler werden hierbei erneut durch den Fehler der gemessenen Ereignisse geteilt durch die Messdauer bestimmt.
 Die Absorptionskoeffizienten $\mu$ der Teilwürfel lassen sich hiermit wie bei den Würfeln 2 und 3 bestimmen.\\
 Es ergibt sich:
 \begin{table}[H]
@@ -153,16 +200,17 @@ Es ergibt sich:
 \caption{Berechnete Absorptionskoeffizienten der einzelnen Teilwürfel.}
 \label{companioncube}
 \begin{tabular}{c|c|c|c}
-  Elementarwürfel& $\mu$ in $\frac{1}{\si{cm}}$& Zugeordnetes Material & Abweichung\\
+  Elementarwürfel& $\mu$ in $\frac{1}{\si{cm}}$& Zugeordnetes Material & Abweichung in \%\\
   \hline
-1 & 0.56 \pm \, 0.09 & Eisen & 0\\
-2 & 0.6  \pm \, 0.07&Messing & 0\\
-3 & 0.29 \pm\, 0.1  &Aluminium & 0\\
-4 & -0.1  \pm\, 0.06&Delrin & 0\\
-5 & 0.69 \pm \,0.08 &Messing & 0\\
-6 & 0.86  \pm \,0.08& Messing & 0\\
-7 & 0.33  \pm \, 0.08& Aluminium & 0\\
-8 & 0.49  \pm \,0.07 &Eisen & 0\\
-9 & -0.19 \pm \,0.09 &Delrin & 0\\
+1 & 0.56 \pm \, 0.09 & Eisen & 2.4\\
+2 & 0.6  \pm \, 0.07&Messing & 2.2\\
+3 & 0.29 \pm\, 0.1  &Aluminium & 42.9\\
+4 & -0.1  \pm\, 0.06&Delrin & 186.2\\
+5 & 0.69 \pm \,0.08 &Messing & 12.4\\
+6 & 0.86  \pm \,0.08& Messing & 40.1\\
+7 & 0.33  \pm \, 0.08& Aluminium & 62.6\\
+8 & 0.49  \pm \,0.07 &Eisen & 14.6\\
+9 & -0.19 \pm \,0.09 &Delrin & 263.8\\
 \end{tabular}
 \end{table}
+Hierbei wurden den Elementarwürfeln jeweils das Material mit der kleinsten Abweichung zugeordnet. Die zur bestimmung genutzten Literaturwerte finden sich in Tabelle 2.
