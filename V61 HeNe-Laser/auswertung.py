@@ -1,34 +1,42 @@
-from __future__ import unicode_literals
-
-from numpy import*
-from matplotlib.pyplot import *
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import numpy as np
+import sys
 from scipy.optimize import curve_fit
+########################################################################################################
+################################## M O D E  1 0 ########################################################
 
-modpos1,modi1 = loadtxt("messwerte/erstemode.txt",unpack=True)
+x, I = np.loadtxt('\messwerte\erstemode.txt', unpack = True)
 
-def I2(r,I_1,I_2,v1,v2,w1,w2):
-    return I_1*exp(-2*(r-v1)**2/w1**2)+ I_2*exp(-2*(r-v2)**2/w2**2)
+def f(x, I0, x0, w):
+    return I0*(8*((x-x0)/w)**2)*np.exp(-2*((x-x0)/w)**2)
 
-modfit2,modcov2 = curve_fit(I2,modpos1,modi1)
+params, cov = curve_fit(f, x, I, p0=[33,20,13])
+I0 = params[0]
+I0_err = np.sqrt(cov[0][0])
+x0 = params[1]
+x0_err = np.sqrt(cov[1][1])
+w = params[2]
+w_err = np.sqrt(cov[2][2])
 
-minarray=linspace(5,15,1000)
-minsuche = I2(minarray,modfit2[0],modfit2[1],modfit2[2],modfit2[3],modfit2[4],modfit2[5])
-i=0
-for i in range(0,len(minarray)):
-    if minsuche[i] == min(minsuche):
-        break
-    else:
-        i = i+1
+print(
+"""
+---------------------------------------------------------------------------------------------------
+Parameter der Ausgleichsrechnung: (I0*((8*(x-x0)**2)/(w**2))*np.exp(-((x-x0)**2)/(w**2))) Mode 10
+I0 = {}+-{}
+x0 = {}+-{}
+w = {}+-{}
+---------------------------------------------------------------------------------------------------
+""".format(I0, I0_err, x0, x0_err, w, w_err))
 
-minstelle = minarray[i]
-
-modxarray2 = linspace(-5,27,50)
-plot(modxarray2-minstelle,I2(modxarray2,modfit2[0],modfit2[1],modfit2[2],modfit2[3],modfit2[4],modfit2[5]))
-plot(modpos1-minstelle,modi1,"*")
-grid()
-xlabel("Abs. zur opt. Achse / mm")
-ylabel("Photostrom I / µA")
-ylim(-2,60)
-xlim(-15,15)
-savefig("mode2.pdf")
-close()
+t = np.linspace(x.min(), x.max(), 1000)
+plt.plot(t, f(t, I0, x0, w), 'r-', label='Ausgleichsrechnung')
+plt.plot(x, I, 'b.', label='Daten $TEM_{10}$-Mode')
+plt.xlim(x.min()-2, x.max()+2)
+plt.ylabel(r"Stromstärke $I/$µA")
+plt.xlabel(r"Abstand $/mm$")
+plt.legend(loc='best')
+plt.grid()
+plt.tight_layout()
+plt.savefig("plot_Mode10.pdf")
+plt.close()
