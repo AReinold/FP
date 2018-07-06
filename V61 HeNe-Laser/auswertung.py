@@ -6,7 +6,7 @@ from scipy.optimize import curve_fit
 ########################################################################################################
 ################################## M O D E  1 0 ########################################################
 
-x, I = np.loadtxt('\messwerte\erstemode.txt', unpack = True)
+x, I = np.loadtxt('messwerte\erstemode.txt', unpack = True)
 
 def f(x, I0, x0, w):
     return I0*(8*((x-x0)/w)**2)*np.exp(-2*((x-x0)/w)**2)
