@@ -21,7 +21,7 @@ Es ist zum einen möglich, dass eine Emission induziert wird, wenn ein externes 
 Hierbei geht ein Atom aufgrund dessen vom angeregten Zustand in den Grundzustand unter Aussendung eines Photons über.
 Das eintreffende und das ausgehende Photon stimmt hierbei in Energie, Phase und Ausbreitungsrichtung überein.
 Dieser Vorgang der Photonemission kann aber auch spontan passieren.
-Der Zusammenhang zwischen der Anzahl der Photonen, die pro Volumeneinheit pro Sekunde induziert emittiert werden wird durch den Zusammenhang
+Der Zusammenhang zwischen der Anzahl der Photonen, die pro Volumeneinheit pro Sekunde induziert emittiert werden, wird durch den Zusammenhang
 \begin{equation}
   \dot{N} = n_2\rho(\nu)B_\text{21}
 \end{equation}
@@ -52,9 +52,26 @@ Somit gilt für einen stabilen Resonator
   0 \leq g_1 \cdot g_2 \leq 1.
 \end{equation}
 Die Resonatorparameter sind im Allgemeinen gegeben durch $g_i=1-L/r_i$ gegeben;
-die Krümmungsradien $r_i$ der Spiegel und die Resonatorlänge $L$ sind hierbei veränderlich.
-
-***MODENZEUGS AUS ANLEITUNG NOCH ERGAENZEN***
+die Krümmungsradien $r_i$ der Spiegel und die Resonatorlänge $L$ sind hierbei veränderlich.\\
+Die Resonatorlänge ist sehr viel größer als die Wellenlänge des Lasers.
+Aufgrund dessen erfüllen viele Frequenzen die Resonatorbedingung einer stehenden Welle.
+Die Anzahl der Wellenlängen im Resonator wird als longitudinale Mode bezeichnet; aufgrund von zum Beispiel Spiegelunebenheiten kann es auch zu transversalen Moden kommen.
+Die Eigenschwingungen oder Moden eines Resonator werden als $\symup{TEM}_\text{lqp}$ bezeichnet. Die Indizes l und p beschreiben die Knoten in x- und y-Richtung. Sie sind somit die transversalen Moden.
+q ist folglich die longitudinale Mode.
+Im Allgemeine gilt: höhere Moden haben größere Verluste als niedrigere Moden mit höherer Symmetrie.
+Die $\symup{TEM}_\text{00}$ Grundmode ist die Mode mit der höchsten Symmetrie und mit den wenigsten Verlusten. Sie hat keine Nullstellen in transversaler Richtung.
+Die Intensitätsverteilung wird für eine solche durch eine Gaußverteilung der Form
+\begin{equation}
+I(r)=I_0e^{\frac{-2r^2}{\omega^2}}
+\end{equation}
+beschrieben.
+$I_0$ ist die Maximalintensität, $r$ der Abstand zur optischen Achse und $\omega$ der Strahlradius.
+Dieser lässt sich durch
+\begin{equation}
+  \omega(z)=\omega_0\sqrt{1+\Bigl(\frac{\theta z}{\omega_0}\Bigr)^2}
+\end{equation}
+mit dem Abstand $z$ von der minimalen Strahltaillie $\omega_0$ berechnen.
+$\theta=\frac{\lambda}{\pi}\omega_0$ ist hierbei die Divergenz des Gaußschen Strahls.
 \subsection{Der HeNe-Laser}
 Der Helium-Neon-Laser ist, wie der Name schon sagt, ein Laser mit einem Gasgemisch aus Helium- und Neon-Atomen.
 Das Verhältnis beträgt 5:1.
