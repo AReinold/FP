@@ -19,12 +19,13 @@ $n$  & $s_n$ [cm]    & $\lambda$ [nm]     \\
 6 & 6.5 & 614,7
 \end{tabular}
 \caption{Messwerte sowie berechnete Werte der Wellenlängenbestimmung}
+\label{welltab}
 \end{table}
 Als Mittelwert ergibt sich hierbei:
 \begin{equation}
   \lambda= (628,2 \pm 8,7) \, \si{\nano\meter}
 \end{equation}
-\subparagraph{Modenuntersuchung}
+\subsection{Modenuntersuchung}
 \subsubsection{Grundmode}
 Zur Untersuchung der Grundmode werden die Messwerte an eine Gaußfunktion der Form
 \begin{equation}
@@ -32,7 +33,7 @@ Zur Untersuchung der Grundmode werden die Messwerte an eine Gaußfunktion der Fo
   I_{(0, 0)}(L) = I_0\exp\left(-2\left(\frac{L - d_0}{\omega}\right)^2\right)
 \end{equation}
 gefittet. Hierbei bezeichnet $I_0$ die Maximalintensität, $d_0$ die Verschiebung der Photodiode senkrecht zur Strahlebene und $\omega$ den Strahlradius.
-Mit den Messwerte und Tabelle \ref{mode1} ergibt sich:
+Mit den Messwerten aus Tabelle \ref{mode1} ergibt sich:
 \begin{table}[]
   \centering
 \begin{tabular}{l}
@@ -76,18 +77,21 @@ Die Messwerte sowie der dazugehörige Fit sind in Abb\ref{mode1fit} dargestellt.
 \end{figure}
 
 \subsubsection{$\text{TEM}_{01}$-Mode}
-Zur Untersuchung der $\text{TEM}_{01}$-Mode werden die aufgenommenen Messwerte aus Tabelle \ref{mode2} mit einer Funktio der Form
+Zur Untersuchung der $\text{TEM}_{01}$-Mode werden die aufgenommenen Messwerte aus Tabelle \ref{mode2} mit einer Funktion der Form
 \begin{equation}
-  I(L)=I_0\cdot\frac{8(L-d_0)^2}{\omega^2}\cdot\symup{e}^{\frac{-2(l-d_0)^2}{\omega^2}} \, ,
+  I(L)=I_{0,1}\cdot\symup{e}^{\frac{-2(l-d_{0,1})^2}{(\omega_1)^2}}+I_{0,2}\cdot\symup{e}^{\frac{-2(l-d_{0,2})^2}{(\omega_2)^2}} \, ,
 \end{equation}
-wobei die Bedeutungen von $I_0$, $d_0$ und $\omega$ analog zu denen bei der Grundmode sind.
+wobei die Bedeutungen von $I_{0,1}$, $I_{0,2}$, $d_{0,1}$ $d_{0,2}$ und $\omega_1$ sowie $\omega_2$ analog zu denen bei der Grundmode sind.
 Es ergibt sich hierbei:
-\begin{table}[]
+\begin{table}[H]
   \centering
 \begin{tabular}{l}
- $I=(0.24 \pm 0,02)\, \si{\micro\ampere}$\\
- $d=(8,6 \pm 0,2)\, \si{\milli\meter}$   \\
-$\omega=(5,8 +- 0,3)\,  \si{\micro\ampere}$
+ $I_{0,1}=(0,34 \pm 0,04)\, \si{\micro\ampere}$\\
+ $d_{0,1}=(4,29 \pm 0,22)\, \si{\milli\meter}$   \\
+$\omega_1=(3,2 \pm 0,4)\,  \si{\micro\ampere}$ \\
+$I_{0,2}=(0,41 \pm 0,04)\, \si{\micro\ampere}$\\
+$d_{0,2}=(12,94 \pm 0,21)\, \si{\milli\meter}$   \\
+$\omega_2=(3,4 \pm 0,5)\,  \si{\micro\ampere}$ \\
 \end{tabular}
 \end{table}
 \begin{table}[]
@@ -118,9 +122,9 @@ L [$ \si{\milli\meter}$]   &   I [$ \si{\micro\ampere}$]     \\
 Die Augleichskurve ist zusammen mit den Messwerten in Abb.\ref{mode2fit} dargestellt.
 \begin{figure}[H]
   \centering
-  \includegraphics[width=14cm]{bilder/erstemodefit.png}
+  \includegraphics[width=14cm]{bilder/T_10.pdf}
   \caption{Messwerte und Fit der  $\text{TEM}_{01}$-Mode.}
-  \label{mode1fit}
+  \label{mode2fit}
 \end{figure}
 \subsection{Polarisationsmessung}
 Zur Untersuchung der Polarisation des Lasers werden die aufgenommenen Messwerte an eine Funktion der Form
@@ -188,8 +192,7 @@ Die aufgenommenen Messwerte finden sich in Tabelle \ref{polwert}.
 \label{polwert}
 \end{table}
 \subsection{Stabilitätsmessung}
-Bei der ersten untersuchten Spiegelkonfiguration handelt es sich um zwei konkave Spiegel. Die aufgenommenen Messwerte, welche in Tabelle \ref{stab1} zu finden sind,
-werden an eine Funktion der Form:
+Bei der ersten untersuchten Spiegelkonfiguration handelt es sich um zwei konkave Spiegel. Die aufgenommenen Messwerte werden an eine Funktion der Form:
 \begin{equation}
   I(s)=a\cdot s^2+bs+c
 \end{equation}
