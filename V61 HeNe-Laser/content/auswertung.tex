@@ -1,31 +1,6 @@
 \section{Auswertung}
-\subsection{Polarisation}
-% I_0=2.68 \pm 0.05 µA
-%\phi=72.5°+-0.96°
-\subsection{Wellenlänge}
-% n=1 d_n=6,4cm \lambda=639.2nm
-% n=2 d_n=6,4cm+6.3 \lambda=631.7nm
-% n=3 d_n=6,4cm+6.3+6.5 \lambda=632.6nm
-% n=4 d_n=6,4cm+6.3+6.5+6.5 \lambda=629.3nm
-% n=5 d_n=6,4cm+6.3+6.5+6.5+6.4 \lambda=621.8nm
-% n=6 d_n=6,4cm+6.3+6.5+6.5+6.4+6.5 \lambda=614.7nm
-\subsection{TEM Moden}
-%Grundmode I=I_0*exp(-2*((x-d)/w)**2):
-%I=1.04443 +- 0.03142
-%d=6.79377 +- 0.1143
-%w=6.59133 +- 0.2345
-%Erste Mode
-%I(r)=a\cdot\frac{8(x-b)^2}{c^2}\cdot\symup{e}^{\frac{-2(x-b)^2}{c^2}}
-%a=0.235343 +- 0,01453
-%b=8,5871 +- 0,1666
-%c=5,83715 +- 0,2477
-\subsection{Stabilitätsmessung}
-%f(x)=a*x^2+bx+c
-%a=0.00172 +- 0.0007
-%b=-0.389 +- 0,1425
-%c=22.134+- 7,027
 \subsection{Wellenlängenbestimmung}
-Die zur Bestimmung der Wellenlänge $\lambda$ aufgenommenen Werte, sowie die daraus berechneten Wellenlängen sind in Tabelle $\ref{welltab}$ dargestellt. Für $\lambda$ gilt hierbei:
+Die zur Bestimmung der Wellenlänge $\lambda$ aufgenommenen Werte, sowie die daraus berechneten Wellenlängen sind in Tabelle \ref{welltab} dargestellt. Für $\lambda$ gilt hierbei:
 \begin{equation}
   \lambda = \frac{b}{n}\cdot\sin\left(\tan^{-1}\left(\frac{s_n}{L}\right)\right) \, .
 \end{equation}
@@ -43,6 +18,7 @@ $n$  & $s_n$ [cm]    & $\lambda$ [nm]     \\
 5 & 6.4 & 621,8 \\
 6 & 6.5 & 614,7
 \end{tabular}
+\caption{Messwerte sowie berechnete Werte der Wellenlängenbestimmung}
 \end{table}
 Als Mittelwert ergibt sich hierbei:
 \begin{equation}
@@ -50,4 +26,204 @@ Als Mittelwert ergibt sich hierbei:
 \end{equation}
 \subparagraph{Modenuntersuchung}
 \subsubsection{Grundmode}
-Zur Untersuchung der Grundmode wird 
+Zur Untersuchung der Grundmode werden die Messwerte an eine Gaußfunktion der Form
+\begin{equation}
+\label{eqn:gauß}
+  I_{(0, 0)}(L) = I_0\exp\left(-2\left(\frac{L - d_0}{\omega}\right)^2\right)
+\end{equation}
+gefittet. Hierbei bezeichnet $I_0$ die Maximalintensität, $d_0$ die Verschiebung der Photodiode senkrecht zur Strahlebene und $\omega$ den Strahlradius.
+Mit den Messwerte und Tabelle \ref{mode1} ergibt sich:
+\begin{table}[]
+  \centering
+\begin{tabular}{l}
+ $I=(1.04 \pm 0.04)\, \si{\micro\ampere}$\\
+ $d=(6.8 \pm 0.2)\, \si{\milli\meter}$   \\
+$\omega=(6.6 \pm 0.3)\,  \si{\micro\ampere}$
+\end{tabular}
+\end{table}
+\begin{table}[]
+  \centering
+
+\begin{tabular}{c|c}
+L [$ \si{\milli\meter}$]   &   I [$ \si{\micro\ampere}$]     \\
+\hline
+0  & 0.1444 \\
+1  & 0.18   \\
+2  & 0.37   \\
+3  & 0.59   \\
+4  & 0.765  \\
+5  & 0.9    \\
+6  & 0.85   \\
+7  & 1.127  \\
+8  & 0.97   \\
+9  & 0.906  \\
+10 & 0.667  \\
+11 & 0.415  \\
+12 & 0.269  \\
+13 & 0.17   \\
+14 & 0.083  \\
+15 & 0.05
+\end{tabular}
+\caption{Die aufgenommenen Messwerte zur Untersuchung der Grundmode}
+\label{mode1}
+\end{table}
+Die Messwerte sowie der dazugehörige Fit sind in Abb\ref{mode1fit} dargestellt.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{bilder/Grundmode.png}
+  \caption{Messwerte sowie Fit zur Grundmode.}
+  \label{mode1fit}
+\end{figure}
+
+\subsubsection{$\text{TEM}_{01}$-Mode}
+Zur Untersuchung der $\text{TEM}_{01}$-Mode werden die aufgenommenen Messwerte aus Tabelle \ref{mode2} mit einer Funktio der Form
+\begin{equation}
+  I(L)=I_0\cdot\frac{8(L-d_0)^2}{\omega^2}\cdot\symup{e}^{\frac{-2(l-d_0)^2}{\omega^2}} \, ,
+\end{equation}
+wobei die Bedeutungen von $I_0$, $d_0$ und $\omega$ analog zu denen bei der Grundmode sind.
+Es ergibt sich hierbei:
+\begin{table}[]
+  \centering
+\begin{tabular}{l}
+ $I=(0.24 \pm 0,02)\, \si{\micro\ampere}$\\
+ $d=(8,6 \pm 0,2)\, \si{\milli\meter}$   \\
+$\omega=(5,8 +- 0,3)\,  \si{\micro\ampere}$
+\end{tabular}
+\end{table}
+\begin{table}[]
+  \centering
+\begin{tabular}{c|c}
+L [$ \si{\milli\meter}$]   &   I [$ \si{\micro\ampere}$]     \\
+  \hline
+0  & 0.088  \\
+1  & 0.135  \\
+2  & 0.112  \\
+3  & 0.17   \\
+4  & 0.4    \\
+5  & 0.3    \\
+6  & 0.202  \\
+7  & 0.07   \\
+8  & 0.0093 \\
+9  & 0.0178 \\
+10 & 0.091  \\
+11 & 0.218  \\
+12 & 0.38   \\
+13 & 0.41   \\
+14 & 0.29   \\
+15 & 0.25
+\end{tabular}
+\caption{Messwerte zur Untersuchung der ersten angeregten Mode}
+\label{mode2}
+\end{table}
+Die Augleichskurve ist zusammen mit den Messwerten in Abb.\ref{mode2fit} dargestellt.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{bilder/erstemodefit.png}
+  \caption{Messwerte und Fit der  $\text{TEM}_{01}$-Mode.}
+  \label{mode1fit}
+\end{figure}
+\subsection{Polarisationsmessung}
+Zur Untersuchung der Polarisation des Lasers werden die aufgenommenen Messwerte an eine Funktion der Form
+\begin{equation}
+   I(\varphi) = I_0 \cos^2\!\left(\varphi-\varphi_0\right)\,
+\end{equation}
+gefittet. Die in Abb. \ref{polfit} dargestellte Ausgleichsrechnung ergibt:
+\begin{table}[H]
+  \centering
+\begin{tabular}{l}
+ $I_0=(2.68 \pm 0.05)\, \si{\micro\ampere}$\\
+ $\varphi_0=72.5° \pm 0.96°$   \\
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{bilder/polarplot.png}
+  \caption{Messwerte und Fit für die Polarisationsuntersuchung.}
+  \label{polfit}
+\end{figure}
+Die aufgenommenen Messwerte finden sich in Tabelle \ref{polwert}.
+\begin{table}[H]
+  \centering
+\begin{tabular}{c|c}
+  Winkel [°]  &  Intensität [$ \si{\micro\ampere}$]     \\
+  \hline
+0   & 0.35  \\
+10  & 0.67  \\
+20  & 1.024 \\
+30  & 1.555 \\
+40  & 1.78  \\
+50  & 2.45  \\
+60  & 2.56  \\
+70  & 3.02  \\
+80  & 2.999 \\
+90  & 2.815 \\
+100 & 2.25  \\
+110 & 1.637 \\
+120 & 1.021 \\
+130 & 0.619 \\
+140 & 0.231 \\
+150 & 0.058 \\
+160 & 0.005 \\
+170 & 0.096 \\
+180 & 0.27  \\
+190 & 0.492 \\
+200 & 0.864 \\
+210 & 1.306 \\
+220 & 1.582 \\
+230 & 2.156 \\
+240 & 2.31  \\
+250 & 2.667 \\
+260 & 2.527 \\
+270 & 2.46  \\
+280 & 2.069 \\
+290 & 1.557 \\
+300 & 1.052 \\
+310 & 0.636 \\
+320 & 0.26  \\
+330 & 0.063 \\
+340 & 0.007 \\
+350 & 0.11
+\end{tabular}
+\caption{Messwerte zur Untersuchung der Polarisation.}
+\label{polwert}
+\end{table}
+\subsection{Stabilitätsmessung}
+Bei der ersten untersuchten Spiegelkonfiguration handelt es sich um zwei konkave Spiegel. Die aufgenommenen Messwerte, welche in Tabelle \ref{stab1} zu finden sind,
+werden an eine Funktion der Form:
+\begin{equation}
+  I(s)=a\cdot s^2+bs+c
+\end{equation}
+gefittet. Dies ist in Abb. \ref{stabfit1} dargestellt. Die Ausgleichsrechnung ergibt:
+\begin{table}[H]
+  \centering
+\begin{tabular}{l}
+ $a=(0.0017 \pm 0.0007)\, \frac{\si{\micro\ampere}}{\si{\centi\meter}^2}$\\
+ $b=(-0.4 \pm 0,2)\,  \frac{\si{\micro\ampere}}{\si{\centi\meter}}$   \\
+  $c=(22.1+- 7,1)\,  \si{\micro\ampere}$   \\
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{bilder/konkavkonkav.png}
+  \caption{Messwerte und Fit für die Stabilitätsmessung mit zwei konkaven Spiegeln.}
+  \label{stabfit1}
+\end{figure}
+Die zweite Spiegelkonfiguration besteht aus einem konkaven und einem planaren Spiegel. Hierbei wird als Fitfunktion eine lineare Funktion der Form:
+\begin{equation}
+  I(s)=m\cdot s+b
+\end{equation}
+verwandt. Es ergibt sich:
+\begin{table}
+  \centering
+\begin{tabular}{l}
+  $m=(-0.004 \pm 0,02)\,  \frac{\si{\micro\ampere}}{\si{\centi\meter}}$   \\
+ $b=(0.91 \pm 1.4)\,\si{\micro\ampere}$\\
+\end{tabular}
+\end{table}
+Die Messwerte mit Ausgleichsgerade sind in Abb.\ref{dumm} dargestellt.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{bilder/konkavplanar.png}
+  \caption{Messwerte und Fit für die Stabilitätsmessung mit einem konkaven und einem konvexen Spiegel.}
+  \label{dumm}
+\end{figure}
